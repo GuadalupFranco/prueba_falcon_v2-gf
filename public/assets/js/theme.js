@@ -6800,17 +6800,6 @@ const candleChartInit = () => {
     }
   };
 
-const scrollbarInit = () => {
-  Array.prototype.forEach.call(
-    document.querySelectorAll(".scrollbar-overlay"),
-    (el) => new window.OverlayScrollbars(el, {
-      scrollbars: {
-        autoHide: "leave",
-        autoHideDelay: 200
-      },
-    })
-  );
-};
 const iconCopiedInit = () => {
     const iconList = document.getElementById("icon-list");
     const iconCopiedToast = document.getElementById("icon-copied-toast");
@@ -10155,6 +10144,18 @@ const linePaymentChartInit = () => {
         });
       });
     }
+  };
+  
+  const scrollbarInit = () => {
+    Array.prototype.forEach.call(
+      document.querySelectorAll(".scrollbar-overlay"),
+      (el) => new window.OverlayScrollbars(el, {
+        scrollbars: {
+          autoHide: "leave",
+          autoHideDelay: 200
+        },
+      })
+    );
   };
 
   const utils = {
