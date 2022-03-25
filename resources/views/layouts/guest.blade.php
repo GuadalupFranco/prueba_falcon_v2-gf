@@ -16,7 +16,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
 
-        @include('components.falcon-head')
+        @include('assets.components.falcon-head')
     </head>
     <body class="bg-light font-sans antialiased">
         {{ $slot }}
