@@ -176,13 +176,14 @@
         </li>
     </ul>
     <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
+        <!-- Botón que no sirve -->
         <li class="nav-item">
             <div class="theme-control-toggle fa-icon-wait px-2">
                 <input class="form-check-input ms-0 theme-control-toggle-input" id="themeControlToggle" type="checkbox"
                     data-theme-control="theme" value="dark">
                 <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle"
                     data-bs-toggle="tooltip" data-bs-placement="left" title=""
-                    data-bs-original-title="Switch to light theme" aria-label="Switch to light theme"><svg
+                    data-bs-original-title="Cambiar a modo claro" aria-label="Cambiar a modo claro"><svg
                         class="svg-inline--fa fa-sun fa-w-16 fs-0" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512" data-fa-i2svg="">
@@ -192,7 +193,7 @@
                     </svg><!-- <span class="fas fa-sun fs-0"></span> Font Awesome fontawesome.com --></label>
                 <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle"
                     data-bs-toggle="tooltip" data-bs-placement="left" title=""
-                    data-bs-original-title="Switch to dark theme" aria-label="Switch to dark theme"><svg
+                    data-bs-original-title="Cambiar a modo oscuro" aria-label="Cambiar a modo oscuro"><svg
                         class="svg-inline--fa fa-moon fa-w-16 fs-0" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="moon" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512" data-fa-i2svg="">
@@ -202,24 +203,7 @@
                     </svg><!-- <span class="fas fa-moon fs-0"></span> Font Awesome fontawesome.com --></label>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link px-0 notification-indicator notification-indicator-warning notification-indicator-fill fa-icon-wait"
-                href="app/e-commerce/shopping-cart.html"><svg class="svg-inline--fa fa-shopping-cart fa-w-18"
-                    data-fa-transform="shrink-7" style="font-size: 33px;transform-origin: 0.5625em 0.5em;"
-                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
-                    <g transform="translate(288 256)">
-                        <g transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)">
-                            <path fill="currentColor"
-                                d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
-                                transform="translate(-288 -256)"></path>
-                        </g>
-                    </g>
-                </svg>
-                <!-- <span class="fas fa-shopping-cart" data-fa-transform="shrink-7" style="font-size: 33px;"></span> Font Awesome fontawesome.com --><span
-                    class="notification-indicator-number">1</span></a>
-
-        </li>
+        <!-- Botón que no sirve -->
         <li class="nav-item dropdown">
             <a class="nav-link notification-indicator notification-indicator-primary px-0 fa-icon-wait"
                 id="navbarDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -242,10 +226,9 @@
                     <div class="card-header">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto">
-                                <h6 class="card-header-title mb-0">Notifications</h6>
+                                <h6 class="card-header-title mb-0">Notificaciones</h6>
                             </div>
-                            <div class="col-auto ps-0 ps-sm-3"><a class="card-link fw-normal" href="#">Mark all as
-                                    read</a></div>
+                            <div class="col-auto ps-0 ps-sm-3"><a class="card-link fw-normal" href="#">Marcar como leídos</a></div>
                         </div>
                     </div>
                     <div class="scrollbar-overlay os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"
@@ -383,7 +366,7 @@
                         <div class="os-scrollbar-corner"></div>
                     </div>
                     <div class="card-footer text-center border-top"><a class="card-link d-block"
-                            href="app/social/notifications.html">View all</a></div>
+                            href="app/social/notifications.html">Ver todo</a></div>
                 </div>
             </div>
 
@@ -391,30 +374,45 @@
         <li class="nav-item dropdown"><a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-xl">
-                    <img class="rounded-circle" src="assets/img/team/3-thumb.png" alt="">
+                    @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                        <img class="rounded-circle" width="35" height="35" src="/storage/{{ Auth::user()->profile_photo_path }}" alt="{{ Auth::user()->name }}" />
+                    @else
+                        {{ Auth::user()->name }}
+
+                        <svg class="ms-2" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    @endif
 
                 </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser">
                 <div class="bg-white dark__bg-1000 rounded-2 py-2">
-                    <a class="dropdown-item fw-bold text-warning" href="#!"><svg
-                            class="svg-inline--fa fa-crown fa-w-20 me-1" aria-hidden="true" focusable="false"
-                            data-prefix="fas" data-icon="crown" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 512" data-fa-i2svg="">
-                            <path fill="currentColor"
-                                d="M528 448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm64-320c-26.5 0-48 21.5-48 48 0 7.1 1.6 13.7 4.4 19.8L476 239.2c-15.4 9.2-35.3 4-44.2-11.6L350.3 85C361 76.2 368 63 368 48c0-26.5-21.5-48-48-48s-48 21.5-48 48c0 15 7 28.2 17.7 37l-81.5 142.6c-8.9 15.6-28.9 20.8-44.2 11.6l-72.3-43.4c2.7-6 4.4-12.7 4.4-19.8 0-26.5-21.5-48-48-48S0 149.5 0 176s21.5 48 48 48c2.6 0 5.2-.4 7.7-.8L128 416h384l72.3-192.8c2.5.4 5.1.8 7.7.8 26.5 0 48-21.5 48-48s-21.5-48-48-48z">
-                            </path>
-                        </svg><!-- <span class="fas fa-crown me-1"></span> Font Awesome fontawesome.com --><span>Go
-                            Pro</span></a>
+                    <!-- Account Management -->
+                    <h6 class="dropdown-header small text-muted">
+                        {{ __('Administrar cuenta') }}
+                    </h6>
 
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#!">Set status</a>
-                    <a class="dropdown-item" href="pages/user/profile.html">Profile &amp; account</a>
-                    <a class="dropdown-item" href="#!">Feedback</a>
+                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                        {{ __('Configuración') }}
+                    </x-jet-dropdown-link>
 
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="pages/user/settings.html">Settings</a>
-                    <a class="dropdown-item" href="pages/authentication/card/logout.html">Logout</a>
+                    @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+                        <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
+                            {{ __('API Tokens') }}
+                        </x-jet-dropdown-link>
+                    @endif
+
+                    <hr class="dropdown-divider">
+
+                    <!-- Authentication -->
+                    <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                        {{ __('Cerrar sesión') }}
+                    </x-jet-dropdown-link>
+                    <form method="POST" id="logout-form" action="{{ route('logout') }}">
+                        @csrf
+                    </form>
                 </div>
             </div>
         </li>
