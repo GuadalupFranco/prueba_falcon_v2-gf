@@ -13,7 +13,7 @@
       <div class="content">
         @include('assets.components.header')
         <main>
-          @yield('name')
+          @yield('content')
         </main>
         @include('assets.components.footer')
       </div>
