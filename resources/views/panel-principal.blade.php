@@ -55,7 +55,7 @@ $modulos_profesor_curso = [
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/1.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Nuevo ingreso</h5>
@@ -84,7 +84,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/2.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Alumno / prospecto</h5>
@@ -113,7 +113,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/3.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Servicios escolares</h5>
@@ -142,7 +142,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/4.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Secretaria académica</h5>
@@ -171,7 +171,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/5.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Dirección de Carrera</h5>
@@ -200,7 +200,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/6.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Orientación educativa</h5>
@@ -230,7 +230,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/7.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Profesor curso</h5>
