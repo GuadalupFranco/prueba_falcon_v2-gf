@@ -8,35 +8,47 @@ $modulos_nuevo_ingreso = [
 'panel_servicios_escolares' => 'Panel Servicios Escolares',
 'cursos' => 'Cursos'
 ];
+
 $modulos_alumno_prospecto = [
 'formato_solicitud_1' => 'Formato solicitud No. 1',
 'inicio_alumno_prospecto' => 'Inicio Alumno/Prospecto',
 'panel_prospecto' => 'Panel Prospecto',
 'acceso_prospecto' => 'Acceso Prospecto',
 ];
+
 $modulos_servicios_escolares = [
 'generar_horarios' => 'Generar Horarios',
 'validacion_documentos_fotos' => 'Validación documentos y fotos',
 'agenda' => 'Agenda',
 'proyecciones' => 'Proyecciones',
+'control_fichas' => 'Control Fichas',
+'prospectos' => 'Consulta de Prospectos',
+'resultados_examinacion' => 'Consulta resultados Examinación',
+'panel_servicios_escolares' => 'Panel Servicios Escolares',
+'programar_cursos' => 'Programar Cursos',
+'asignar_grupos' => 'Asignar grupos',
 ];
+
 $modulos_secretaria_academica = [
 'validar_horarios_grupos' => 'Validar Horarios y Grupos',
 'validar_agenda' => 'Validar Agenda',
 'validar_proyecciones' => 'Validar Proyecciones',
 'validar_transporte' => 'Validar transporte',
 ];
+
 $modulos_direccion_carrera = [
 'consulta_grupos' => 'Consultar grupos - Curso introducción',
 'asignar_profesor' =>'Asignar profesores - Curso Introducción',
 'bachillerato_avanzado_consultar_grupos' =>'Consultar grupos - Bachillerato avanzado',
 'bachillerato_avanzado_asignar_profesores' =>'Asignar profesores - Bachillerato avanzado',
 ];
+
 $modulos_orientacion_educativa = [
 'captura_psicometrix' => 'Caputra de Psicometrix',
 'asignar_materias_grupos' => 'Asignar Materias a Grupos',
 'consultar_programacion_grupos' => 'Consultar Programación de Grupos',
 ];
+
 $modulos_profesor_curso = [
 'profesor_curso_consultar_grupos' => 'Consultar grupos',
 'profesor_curso_ci_capturar_calificaciones' => 'Capturar calificaciones | Cursos de Inducción',
