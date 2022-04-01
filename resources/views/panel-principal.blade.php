@@ -54,6 +54,27 @@ $modulos_profesor_curso = [
 'profesor_curso_ci_capturar_calificaciones' => 'Capturar calificaciones | Cursos de Inducción',
 'profesor_curso_ba_capturar_calificaciones' => 'Capturar calificaciones | Bachillerato Avanzado',
 ];
+
+$prueba_tabla = [
+    0 => ['formato_solicitud_2' => 'Continuar Proceso - Formato de Solicitud 2',
+            'encuesta_generica' => 'Encuesta generica (Encuesta de orientacion etc...)',
+            'carga_documentos' => 'Carga de Documentos',
+            'panel_servicios_escolares' => 'Panel Servicios Escolares',
+            'cursos' => 'Cursos'
+        ],
+    1 => ['formato_solicitud_2' => 'Continuar Proceso - Formato de Solicitud 2',
+        'encuesta_generica' => 'Encuesta generica (Encuesta de orientacion etc...)',
+        'carga_documentos' => 'Carga de Documentos',
+        'panel_servicios_escolares' => 'Panel Servicios Escolares',
+        'cursos' => 'Cursos'
+    ],
+    2 => ['formato_solicitud_2' => 'a',
+        'encuesta_generica' => 'b',
+        'carga_documentos' => 'c',
+        'panel_servicios_escolares' => 'd',
+        'cursos' => 'e'
+    ],
+];
 @endphp
 
 @section('content')
@@ -67,8 +88,8 @@ $modulos_profesor_curso = [
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/1.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/1.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Nuevo ingreso</h5>
                 <p>
@@ -96,8 +117,8 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/2.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/2.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Alumno / prospecto</h5>
                 <p>
@@ -125,8 +146,8 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/3.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/3.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Servicios escolares</h5>
                 <p>
@@ -154,8 +175,8 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/4.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/4.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Secretaria académica</h5>
                 <p>
@@ -183,8 +204,8 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/5.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/5.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Dirección de Carrera</h5>
                 <p>
@@ -212,8 +233,8 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/6.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/6.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Orientación educativa</h5>
                 <p>
@@ -242,8 +263,8 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/7.jpg"
-                    alt="Card image cap" /></div>
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/7.jpg" alt="Card image cap" />
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Profesor curso</h5>
                 <p>
@@ -269,6 +290,34 @@ $modulos_profesor_curso = [
             </div>
         </div>
     </div>
+</div>
 
+<!-- Tabla -->
+<div id="tableExample2" data-list='{"valueNames":["name","email","age"],"page":5,"pagination":true}'>
+    <div class="table-responsive scrollbar">
+        <table class="table table-bordered table-striped fs--1 mb-0">
+            <thead class="bg-200 text-900">
+                <tr>
+                    <th class="sort" data-sort="name">Name</th>
+                    <th class="sort" data-sort="email">Email</th>
+                    <th class="sort" data-sort="age">Age</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                @foreach($prueba_tabla as $key => $value)
+                    <tr>
+                        @foreach($value as $llave => $valor)
+                            <td class="name">{{$value[$llave]}}</td>
+                        @endforeach
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-center mt-3"><button class="btn btn-sm btn-falcon-default me-1" type="button"
+            title="Previous" data-list-pagination="prev"><span class="fas fa-chevron-left"></span></button>
+        <ul class="pagination mb-0"></ul><button class="btn btn-sm btn-falcon-default ms-1" type="button" title="Next"
+            data-list-pagination="next"><span class="fas fa-chevron-right"> </span></button>
+    </div>
 </div>
 @endsection
