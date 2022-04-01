@@ -20,3 +20,29 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+
+
+
+
+
+/*
+|-------------------------------------------------------------------
+|    Rutas de Super usuario  
+|-------------------------------------------------------------------
+|   A partir de aquí se escribirán todas las rutas a las que puede acceder el super usuario
+|
+*/ 
+
+Route::view('/vista-panel-principal-superusuario', 'modulos/super-usuario/vista-panel-principal-superusuario')->name('panel-principal-superusuario');
+
+    /*
+    |-------------------------------------------------------------------
+    |    Rutas de módulo "Administración de periodos"
+    |-------------------------------------------------------------------
+    |   A partir de aquí se escribirán todas las rutas relacionadas con la administración de periodos, tareas y convocatorias
+    |
+    */ 
+
+    Route::view('/lista-periodos', 'modulos/super-usuario/administracion-periodos/period/vista-lista-general-periodos')->name('lista-periodos');
