@@ -29,11 +29,11 @@
                     <div class="row">
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-success btn-sm me-2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                <span class="far fa-file-excel text-white fs-1 me-2"></span>
+                                <span class="far fa-file-excel fs-1 me-2"></span>
                                 Calificaciones propedeútico
                             </button>
                             <button class="btn btn-success btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                <span class="far fa-file-excel text-white fs-1 me-2"></span>
+                                <span class="far fa-file-excel fs-1 me-2"></span>
                                 Calificaciones ExBach
                             </button>
                         </div>

@@ -50,7 +50,7 @@
     }
 </script>
 
-<link href="/vendors/dropzone/dropzone.min.css" rel="stylesheet" />
+<!-- <link href="/vendors/fullcalendar/main.min.css" rel="stylesheet" />-->
 
 <!-- ===============================================-->
 <!--    JavaScripts-->
@@ -58,6 +58,7 @@
 <script defer src="/vendors/popper/popper.min.js"></script>
 <script defer src="/vendors/bootstrap/bootstrap.min.js"></script>
 <script defer src="/vendors/anchorjs/anchor.min.js"></script>
+<!-- <script defer src="/vendors/fullcalendar/main.min.js"></script>-->
 <script defer src="/vendors/is/is.min.js"></script>
 <script defer src="/vendors/echarts/echarts.min.js"></script>
 <script defer src="/vendors/fontawesome/all.min.js"></script>

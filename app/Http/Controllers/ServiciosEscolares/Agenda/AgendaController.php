@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\ServiciosEscolares\ControlFichas;
+namespace App\Http\Controllers\ServiciosEscolares\Agenda;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ControlFichasController extends Controller{
+class AgendaController extends Controller{
 
     public function index(){
-        return view('Modulos.ServiciosEscolares.ControlFichas.index');
+        return view('Modulos.ServiciosEscolares.Agenda.index');
     }
 
     public function create()
