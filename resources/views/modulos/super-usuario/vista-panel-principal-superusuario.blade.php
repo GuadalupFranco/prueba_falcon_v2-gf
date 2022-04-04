@@ -1,14 +1,5 @@
 @extends('welcome')
 
-@php
-$submodulos_administracion_periodos = [
-    'superusuario_lista_periodos' => 'Lista de periodos',
-    'superusuario_lista_tareas' => 'Lista de tareas',
-    'superusuario_lista_convocatorias' => 'Lista de calificaciones',
-];
-@endphp
-
-
 @section('content')
 <div class="container mx-0 my-0">
     <div class="accordion" id="accordionExample">
@@ -32,7 +23,20 @@ $submodulos_administracion_periodos = [
                             </p>
                         </div>
                     </div>
-                </div> 
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card overflow-hidden" style="width: 20rem;">
+                        <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+                                alt="Card image cap" /></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Administrar tareas</h5>
+                            <p>
+                                <a class="btn btn-falcon-default mt-2 stretched-link" href="{{route('lista-periodos')}}"
+                                    role="button">Ir</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
     </div>
