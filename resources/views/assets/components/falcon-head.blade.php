@@ -33,7 +33,7 @@
 <link href="/assets/css/theme.css" rel="stylesheet" id="style-default">
 <link href="/assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl" disabled="true">
 <link href="/assets/css/user.css" rel="stylesheet" id="user-style-default">
-
+<link href="vendors/flatpickr/flatpickr.min.css" rel="stylesheet" />
 <script>
     var isRTL = JSON.parse(localStorage.getItem('isRTL'));
     if (isRTL) {
@@ -64,3 +64,4 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
 <script defer src="/vendors/list.js/list.min.js"></script>
 <script defer src="/assets/js/theme.js"></script>
+<script defer src="/assets/js/flatpickr.js"></script>
