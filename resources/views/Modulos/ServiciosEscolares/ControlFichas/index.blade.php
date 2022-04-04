@@ -71,7 +71,7 @@
                                                     <span class="far fa-file-pdf text-success fs-2 me-2"></span>
                                                 </td>
                                                 <td class="name text-center">
-                                                    <button class="btn btn-falcon-warning float-center" type="button">
+                                                    <button class="btn btn-falcon-warning btn-sm float-center" type="button">
                                                         <span class="fas fa-graduation-cap text-warning fs-1"></span>
                                                         Entregar ficha
                                                     </button>
@@ -95,7 +95,7 @@
                                                     <span class="far fa-file-pdf text-success fs-2 me-2"></span>
                                                 </td>
                                                 <td class="name text-center">
-                                                    <button class="btn btn-falcon-warning float-center" type="button">
+                                                    <button class="btn btn-falcon-warning btn-sm float-center" type="button">
                                                         <span class="fas fa-graduation-cap text-warning fs-1"></span>
                                                         Entregar ficha
                                                     </button>
@@ -119,7 +119,7 @@
                                                     <span class="far fa-file-pdf text-success fs-2 me-2"></span>
                                                 </td>
                                                 <td class="name text-center">
-                                                    <button class="btn btn-falcon-default float-center" type="button">
+                                                    <button class="btn btn-falcon-default btn-sm float-center" type="button">
                                                         <span class="fas fa-graduation-cap text-secondary fs-1"></span>
                                                         Entregar ficha
                                                     </button>
@@ -143,7 +143,7 @@
                                                     <span class="far fa-file-pdf text-success fs-2 me-2"></span>
                                                 </td>
                                                 <td class="name text-center">
-                                                    <button class="btn btn-falcon-warning float-center" type="button">
+                                                    <button class="btn btn-falcon-warning btn-sm float-center" type="button">
                                                         <span class="fas fa-graduation-cap text-warning fs-1"></span>
                                                         Entregar ficha
                                                     </button>
@@ -167,7 +167,7 @@
                                                     <span class="far fa-file-pdf text-danger fs-2 me-2"></span>
                                                 </td>
                                                 <td class="name text-center">
-                                                    <button class="btn btn-falcon-default float-center" type="button">
+                                                    <button class="btn btn-falcon-default btn-sm float-center" type="button">
                                                         <span class="fas fa-graduation-cap text-secondary fs-1"></span>
                                                         Entregar ficha
                                                     </button>

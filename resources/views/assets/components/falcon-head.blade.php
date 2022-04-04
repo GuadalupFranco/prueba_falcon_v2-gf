@@ -50,6 +50,7 @@
     }
 </script>
 
+<link href="/vendors/dropzone/dropzone.min.css" rel="stylesheet" />
 
 <!-- ===============================================-->
 <!--    JavaScripts-->
