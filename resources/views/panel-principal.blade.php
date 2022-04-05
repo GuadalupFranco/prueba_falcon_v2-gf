@@ -41,6 +41,17 @@ $modulos_profesor_curso = [
     'profesor_curso_ci_capturar_calificaciones' => 'Capturar calificaciones | Cursos de Inducción',
     'profesor_curso_ba_capturar_calificaciones' => 'Capturar calificaciones | Bachillerato Avanzado',
 ];
+
+$vinculacion = [    
+'calendario_actividades' => 'Calendario de actividades',
+'solicitud_transporte' => 'Solicitud de transporte',
+'formulario_pre_registro' => 'Formulario de pre-registro',
+'agenda_promocional' => 'Agenda promocional',
+'consulta_prospecto' => 'Consulta de prospecto',
+'asignacion' => 'Asignación xde alumnado',
+'formulario_visitas_guiadas' => 'Formulario | Visitas guiadas',
+'formulario_visitas_preparatoria' => 'Formulario | Visitas de preparatoria',
+];
 @endphp
 
 @section('content')
@@ -76,7 +87,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/2.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Alumno / prospecto</h5>
@@ -105,7 +116,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/3.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Servicios escolares</h5>
@@ -134,7 +145,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/4.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Secretaria académica</h5>
@@ -163,7 +174,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/5.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Dirección de Carrera</h5>
@@ -192,7 +203,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/6.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Orientación educativa</h5>
@@ -221,7 +232,7 @@ $modulos_profesor_curso = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/7.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Profesor curso</h5>
@@ -244,6 +255,35 @@ $modulos_profesor_curso = [
                             @endforeach
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card overflow-hidden" style="width: 20rem;">
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/8.jpg"
+                    alt="Card image cap" /></div>
+            <div class="card-body">
+                <h5 class="card-title">Vinculación</h5>
+                <p>
+                    <a class="btn btn-falcon-default mt-2" data-bs-toggle="collapse" href="#collapseVinculacion"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">Módulos</a>
+                </p>
+                <div class="collapse" id="collapseVinculacion">
+                    <div class="border p-card rounded">
+                        <ul class="list-group list-group-flush">
+                            @foreach ($vinculacion as $key => $value)
+                            <li class="list-group-item">
+                                <a class="nav-link p-0" href="app/calendar.html" role="button" aria-expanded="false">
+                                    <div class="d-flex align-items-center">
+                                        <span class="far fa-address-book text-dark fs-1 me-1"></span>
+                                        <span class="nav-link-text ps-1 text-dark">{{ $value }}</span>
+                                    </div>
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>\
                 </div>
             </div>
         </div>
