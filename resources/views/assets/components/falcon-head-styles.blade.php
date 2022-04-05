@@ -49,5 +49,4 @@
         userLinkRTL.setAttribute('disabled', true);
     }
 </script>
-
-<!-- <link href="/vendors/fullcalendar/main.min.css" rel="stylesheet" />-->
+@yield('extra-styles')

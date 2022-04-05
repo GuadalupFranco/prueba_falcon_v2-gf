@@ -1,5 +1,9 @@
 @extends('welcome')
 
+@section('extra-styles')
+<link href="/vendors/fullcalendar/main.min.css" rel="stylesheet"/>
+@endsection
+
 @section('content')
 
 <nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
@@ -1145,5 +1149,7 @@
         </div>
     </div>
 </div>
-<script src="/vendors/dropzone/dropzone.min.js"></script>
+@section('extra-scripts')
+<script src="/vendors/fullcalendar/main.min.js"></script>
+@endsection
 @endsection
