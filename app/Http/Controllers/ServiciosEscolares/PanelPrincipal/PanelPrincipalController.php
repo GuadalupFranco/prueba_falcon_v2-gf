@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PanelPrincipalController extends Controller
 {
     public function index(){
-        return view('Modulos.ServiciosEscolares.ControlFichas.index');
+        return view('Modulos.ServiciosEscolares.PanelPrincipal.index');
     }
 
     public function create()
