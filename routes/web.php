@@ -45,5 +45,5 @@ Route::view('/vista-panel-principal-superusuario', 'modulos/super-usuario/vista-
     |
     */ 
 
-    Route::view('/lista-periodos', 'modulos/super-usuario/administracion-periodos/period/vista-lista-general-periodos')->name('lista-periodos');
+    Route::view('/administracion-periodos', 'modulos/super-usuario/administracion-periodos/vista-general-administracion-periodos')->name('vista-general-periodos');
     Route::view('/nuevo-periodo', 'modulos/super-usuario/administracion-periodos/period/vista-crear-periodo')->name('crear-periodo');

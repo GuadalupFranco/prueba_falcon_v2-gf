@@ -1,22 +1,12 @@
-
-@extends('welcome')
-@section('content')
-<div class="container mx-0 my-0"> 
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="{{route('panel-principal-superusuario')}}">Panel de superusuarios</a></li>
-    <li class="breadcrumb-item"><a href="#">Administración de periodos</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Lista de periodos</li>
-  </ol>
- 
-  <div class="card">
+<div class="card">
     <div class="card-header">
       <div class="row flex-between-end">
         <div class="col-auto align-self-center">
-          <h5 class="mb-0">Lista de periodos</h5>
+          <h5 class="mb-0">Lista de tareas</h5>
         </div>
         <div class="col-6 col-sm-auto ms-auto text-end ps-0">
           <div id="table-purchases-replace-element">
-            <button class="btn btn-falcon-default btn-sm" role="button" data-bs-toggle="modal" data-bs-target="#error-modal">
+            <button class="btn btn-falcon-default btn-sm" role="button" data-bs-toggle="modal" data-bs-target="#nuevo-modal">
               <svg class="svg-inline--fa fa-plus fa-w-14" data-fa-transform="shrink-3 down-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.625em;">
                 <g transform="translate(224 256)">
                   <g transform="translate(0, 64)  scale(0.8125, 0.8125)  rotate(0 0 0)">
@@ -27,7 +17,7 @@
               <!-- <span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span> Font Awesome fontawesome.com -->
               <span class="d-none d-sm-inline-block ms-1">New</span>
             </button>
-            <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal fade" id="nuevo-modal" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
                 <div class="modal-content position-relative">
                   <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
@@ -35,9 +25,9 @@
                   </div>
                   <div class="modal-body p-0">
                     <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
-                      <h4 class="mb-1" id="modalExampleDemoLabel"> Registrar nuevo periodo </h4>
+                      <h4 class="mb-1" id="modalExampleDemoLabel"> Registrar nueva tarea </h4>
                     </div>
-                   @include('modulos.super-usuario.administracion-periodos.period.formulario-periodo') 
+                   @include('modulos.super-usuario.administracion-periodos.task.formulario-tareas') 
 
                   </div>
                   <div class="modal-footer mx-0 my-0">
@@ -69,12 +59,9 @@
         <thead>
           <tr>
             <th scope="col">Id</th>
-            <th scope="col">Periodo superior</th>
+            <th scope="col">tarea superior</th>
             <th scope="col">Descripción</th>
-            <th scope="col">Fecha inicial</th>
-            <th scope="col">Fecha final</th>
-            <th scope="col">Estatus</th>
-            <th scope="col">Tarea relacionada</th>
+            <th scope="col">Bandera convocatoria</th>
             <th class="text-end" scope="col">Acciones</th>
           </tr>
         </thead>
@@ -82,45 +69,37 @@
           <tr class="align-middle">
             <td class="text-nowrap">1</td>
             <td class="text-nowrap text-wrap">null</td>
-            <td class="text-nowrap text-wrap">Ciclo escolar 2022-2023</td>
-            <td class="text-nowrap">01/09/2022</td>
-            <td class="text-nowrap">31/08/2023</td>
-            <td><span class="badge badge rounded-pill d-block p-2 badge-soft-warning">Inactivo<span class="ms-1 fas fa-stream" data-fa-transform="shrink-2"></span></span></td>
             <td class="text-nowrap text-wrap">Ciclo escolar</td>
+            <td><input class="form-check-input" id="flexCheckDefault" type="checkbox" value="" disabled=""/>  </td>
             <td class="text-end">
-              <a class="btn btn-falcon-default mt-2" href="{{route('lista-periodos')}}"
-              role="button">editar</a>
+                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-tarea-modal" role="button">editar</button>
+                <div class="modal fade" id="editar-tarea-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
+                    <div class="modal-content position-relative">
+                        <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                        <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                        <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
+                            <h4 class="mb-1" id="modalExampleDemoLabel"> Registrar nueva tarea </h4>
+                        </div>
+                        @include('modulos.super-usuario.administracion-periodos.task.formulario-tareas') 
+
+                        </div>
+                        <div class="modal-footer mx-0 my-0">
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
+                            <button class="btn btn-danger" type="button">Eliminar tarea </button>
+                            <button class="btn btn-success" type="button">Guardar </button>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
+                
+                </div>
             </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="text-nowrap">2</td>
-            <td class=" text-wrap">Ciclo escolar 2022-2023</td>
-            <td class=" text-wrap">Cuatrimestre Septiembre-Diciembre 2022-2023</td>
-            <td class="text-nowrap">01/09/2022</td>
-            <td class="text-nowrap">31/12/2022</td>
-            <td><span class="badge badge rounded-pill d-block p-2 badge-soft-warning">Inactivo<span class="ms-1 fas fa-stream" data-fa-transform="shrink-2"></span></span></td>
-            <td class="text-wrap">Cuatrimestre</td>
-            <td class="text-end">
-              <a class="btn btn-falcon-default mt-2" href="{{route('lista-periodos')}}"
-              role="button">editar</a>
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="text-nowrap">3</td>
-            <td class=" text-wrap">null</td>
-            <td class=" text-wrap">Segundo proceso de admisión 2022-2023</td>
-            <td class="text-nowrap">07/03/2022</td>
-            <td class="text-nowrap">06/05/2022</td>
-            <td><span class="badge badge rounded-pill d-block p-2 badge-soft-warning">Inactivo<span class="ms-1 fas fa-stream" data-fa-transform="shrink-2"></span></span></td>
-            <td class="text-wrap">Proceso de admisión</td>
-            <td class="text-end">
-              <a class="btn btn-falcon-default mt-2" href="{{route('lista-periodos')}}"
-              role="button">editar</a>
-            </td>
-          </tr>
+          </tr> 
         </tbody>
       </table>
     </div>
   </div>
-</div>  
-@endsection
+</div> 

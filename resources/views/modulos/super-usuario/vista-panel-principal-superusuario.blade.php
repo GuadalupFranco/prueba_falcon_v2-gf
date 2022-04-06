@@ -1,5 +1,7 @@
 @extends('welcome')
 
+
+
 @section('content')
 <div class="container mx-0 my-0">
     <div class="accordion" id="accordionExample">
@@ -42,3 +44,4 @@
     </div>
 </div>
 @endsection
+
