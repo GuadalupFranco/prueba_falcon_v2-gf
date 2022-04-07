@@ -1,4 +1,4 @@
-<div class="card">
+
     <div class="card-header">
       <div class="row flex-between-end">
         <div class="col-auto align-self-center">
@@ -54,58 +54,5 @@
       </div>
     </div>
     <div class="card-body py-0 border-top">
-      <div class="table-responsive scrollbar">
-        <table class="table table-hover table-striped overflow-hidden">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Periodo superior</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Fecha inicial</th>
-            <th scope="col">Fecha final</th>
-            <th scope="col">Estatus</th>
-            <th scope="col">Tarea relacionada</th>
-            <th class="text-end" scope="col">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="align-middle">
-            <td class="text-nowrap">1</td>
-            <td class="text-nowrap text-wrap">null</td>
-            <td class="text-nowrap text-wrap">Ciclo escolar 2022-2023</td>
-            <td class="text-nowrap">01/09/2022</td>
-            <td class="text-nowrap">31/08/2023</td>
-            <td><span class="badge badge rounded-pill d-block p-2 badge-soft-warning">Inactivo<span class="ms-1 fas fa-stream" data-fa-transform="shrink-2"></span></span></td>
-            <td class="text-nowrap text-wrap">Ciclo escolar</td>
-            <td class="text-end">
-              <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-periodo-modal" role="button">editar</button>
-              <div class="modal fade" id="editar-periodo-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
-                  <div class="modal-content position-relative">
-                      <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
-                      <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body p-0">
-                      <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
-                          <h4 class="mb-1" id="modalExampleDemoLabel"> Registrar nueva tarea </h4>
-                      </div>
-                      @include('modulos.super-usuario.administracion-periodos.period.formulario-periodo') 
-
-                      </div>
-                      <div class="modal-footer mx-0 my-0">
-                          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
-                          <button class="btn btn-danger" type="button">Eliminar periodo </button>
-                          <button class="btn btn-success" type="button">Guardar </button>
-                      </div>
-                      </form>
-                  </div>
-                  </div>
-              </div>
-            </td>
-          </tr>
-          
-        </tbody>
-      </table>
+      @include('modulos.super-usuario.administracion-periodos.period.periodos-index')
     </div>
-  </div>
-</div> 

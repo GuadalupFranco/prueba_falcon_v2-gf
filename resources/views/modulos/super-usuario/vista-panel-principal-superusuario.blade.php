@@ -20,7 +20,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Administrar periodos</h5>
                             <p>
-                                <a class="btn btn-falcon-default mt-2" href="{{route('lista-periodos')}}"
+                                <a class="btn btn-falcon-default mt-2" href="{{route('vista-general-periodos')}}"
                                     role="button">Ir</a>
                             </p>
                         </div>
@@ -31,9 +31,9 @@
                         <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
                                 alt="Card image cap" /></div>
                         <div class="card-body">
-                            <h5 class="card-title">Administrar tareas</h5>
+                            <h5 class="card-title">Administrar usuarios</h5>
                             <p>
-                                <a class="btn btn-falcon-default mt-2 stretched-link" href="{{route('lista-periodos')}}"
+                                <a class="btn btn-falcon-default mt-2 stretched-link" href="{{route('vista-general-periodos')}}"
                                     role="button">Ir</a>
                             </p>
                         </div>

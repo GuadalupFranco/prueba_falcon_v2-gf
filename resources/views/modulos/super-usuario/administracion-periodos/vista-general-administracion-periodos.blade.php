@@ -5,6 +5,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
 @endsection
 
@@ -23,7 +24,7 @@
         </div>
       </div>
     </div>
-    <div class="card-body">
+    <div class="card-body p-3">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item"><a class="nav-link active" id="periodos-tab" data-bs-toggle="tab" href="#tab-periodos" role="tab" aria-controls="tab-periodos" aria-selected="true">Periodos</a></li>
         <li class="nav-item"><a class="nav-link" id="tareas-tab" data-bs-toggle="tab" href="#tab-tareas" role="tab" aria-controls="tab-tareas" aria-selected="false">Tareas</a></li>
