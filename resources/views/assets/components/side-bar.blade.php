@@ -25,7 +25,7 @@
 
         </div><a class="navbar-brand" href="index.html">
             <div class="d-flex align-items-center py-3"><img class="me-2"
-                    src="assets/img/icons/spot-illustrations/falcon.png" alt="" width="40"><span
+                    src="/assets/img/icons/spot-illustrations/falcon.png" alt="" width="40"><span
                     class="font-sans-serif">falcon</span>
             </div>
         </a>
@@ -126,7 +126,7 @@
                                 class="nav-link-text ps-1">Chat</span>
                         </div>
                     </a>
-                    <!-- parent pages--><a class="nav-link dropdown-indicator" href="#email" role="button"
+                    <!-- parent pages--><a class="nav-link dropdown-indicator" href="#mail" role="button"
                         data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
                         <div class="d-flex align-items-center"><span class="nav-link-icon"><svg
                                     class="svg-inline--fa fa-envelope-open fa-w-16" aria-hidden="true" focusable="false"
@@ -140,7 +140,7 @@
                                 class="nav-link-text ps-1">Email</span>
                         </div>
                     </a>
-                    <ul class="nav collapse false" id="email">
+                    <ul class="nav collapse false" id="mail">
                         <li class="nav-item"><a class="nav-link" href="app/email/inbox.html" aria-expanded="false">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Inbox</span>
                                 </div>

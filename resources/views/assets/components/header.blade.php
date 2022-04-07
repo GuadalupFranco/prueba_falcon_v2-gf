@@ -5,7 +5,7 @@
         aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span
                 class="toggle-line"></span></span></button>
     <a class="navbar-brand me-1 me-sm-3" href="index.html">
-        <div class="d-flex align-items-center"><img class="me-2" src="assets/img/icons/spot-illustrations/falcon.png"
+        <div class="d-flex align-items-center"><img class="me-2" src="/assets/img/icons/spot-illustrations/falcon.png"
                 alt="" width="40"><span class="font-sans-serif">falcon</span>
         </div>
     </a>
@@ -113,7 +113,7 @@
                             class="dropdown-item px-card py-2" href="#!">
                             <div class="d-flex align-items-center">
                                 <div class="file-thumbnail me-2"><img class="border h-100 w-100 fit-cover rounded-3"
-                                        src="assets/img/products/3-thumb.png" alt=""></div>
+                                        src="/assets/img/products/3-thumb.png" alt=""></div>
                                 <div class="flex-1">
                                     <h6 class="mb-0 title">iPhone</h6>
                                     <p class="fs--2 mb-0 d-flex"><span class="fw-semi-bold">Antony</span><span
@@ -122,7 +122,7 @@
                             </div>
                         </a><a class="dropdown-item px-card py-2" href="#!">
                             <div class="d-flex align-items-center">
-                                <div class="file-thumbnail me-2"><img class="img-fluid" src="assets/img/icons/zip.png"
+                                <div class="file-thumbnail me-2"><img class="img-fluid" src="/assets/img/icons/zip.png"
                                         alt=""></div>
                                 <div class="flex-1">
                                     <h6 class="mb-0 title">Falcon v1.8.2</h6>
@@ -136,7 +136,7 @@
                             class="dropdown-item px-card py-2" href="pages/user/profile.html">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-l status-online me-2">
-                                    <img class="rounded-circle" src="assets/img/team/1.jpg" alt="">
+                                    <img class="rounded-circle" src="/assets/img/team/1.jpg" alt="">
 
                                 </div>
                                 <div class="flex-1">
@@ -147,7 +147,7 @@
                         </a><a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-l me-2">
-                                    <img class="rounded-circle" src="assets/img/team/2.jpg" alt="">
+                                    <img class="rounded-circle" src="/assets/img/team/2.jpg" alt="">
 
                                 </div>
                                 <div class="flex-1">
@@ -158,7 +158,7 @@
                         </a><a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-l me-2">
-                                    <img class="rounded-circle" src="assets/img/team/3.jpg" alt="">
+                                    <img class="rounded-circle" src="/assets/img/team/3.jpg" alt="">
 
                                 </div>
                                 <div class="flex-1">
@@ -249,7 +249,7 @@
                                             <a class="notification notification-flush notification-unread" href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-2xl me-3">
-                                                        <img class="rounded-circle" src="assets/img/team/1-thumb.png"
+                                                        <img class="rounded-circle" src="/assets/img/team/1-thumb.png"
                                                             alt="">
 
                                                     </div>
@@ -296,7 +296,7 @@
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-2xl me-3">
                                                         <img class="rounded-circle"
-                                                            src="assets/img/icons/weather-sm.jpg" alt="">
+                                                            src="/assets/img/icons/weather-sm.jpg" alt="">
 
                                                     </div>
                                                 </div>
@@ -315,7 +315,7 @@
                                                 href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-xl me-3">
-                                                        <img class="rounded-circle" src="assets/img/logos/oxford.png"
+                                                        <img class="rounded-circle" src="/assets/img/logos/oxford.png"
                                                             alt="">
 
                                                     </div>
@@ -334,7 +334,7 @@
                                             <a class="border-bottom-0 notification notification-flush" href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-xl me-3">
-                                                        <img class="rounded-circle" src="assets/img/team/10.jpg" alt="">
+                                                        <img class="rounded-circle" src="/assets/img/team/10.jpg" alt="">
 
                                                     </div>
                                                 </div>

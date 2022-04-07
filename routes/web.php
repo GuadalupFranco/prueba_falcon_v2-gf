@@ -20,3 +20,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/prueba', function () {
+    // return view('Modulos.OE.AsignarMaterias', ['status' => "Completado", "nombre" => "Ingeniería en Sistemas Computacionales"]);
+    // return view('Modulos.OE.CapturaPsicometrix');
+    return view('Modulos.OE.ConsultaProgramacionCI');
+});
