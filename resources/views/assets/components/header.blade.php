@@ -375,7 +375,11 @@
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-xl">
                     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                        <img class="rounded-circle" width="35" height="35" src="/storage/{{ Auth::user()->profile_photo_path }}" alt="{{ Auth::user()->name }}" />
+                        @if(Auth::user()->profile_photo_path)
+                            <img src="/storage/{{ Auth::user()->profile_photo_path }}" class="rounded-circle" height="100" width="100">
+                        @else
+                            <img src="{{ Auth::user()->profile_photo_url }}" class="rounded-circle" height="100" width="100">
+                        @endif
                     @else
                         {{ Auth::user()->name }}
 

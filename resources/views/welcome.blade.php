@@ -1,6 +1,6 @@
 <html lang="en-US" dir="ltr" class="chrome windows fontawesome-i2svg-active fontawesome-i2svg-complete">
   <head>
-    @include('assets.components.falcon-head')
+    @include('assets.components.falcon-styles')
   </head>
 
 <body>
@@ -23,5 +23,6 @@
   <!--    End of Main Content-->
   <!-- ===============================================-->
   @include('assets.components.button-configuration')
+  @include('assets.components.falcon-scripts')
 </body>
 </html>

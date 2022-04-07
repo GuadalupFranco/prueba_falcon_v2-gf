@@ -18,7 +18,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
 
-        @include('assets.components.falcon-head')
+        @include('assets.components.falcon-styles')
     </head>
     <body class="font-sans antialiased bg-light">
         <x-jet-banner />
@@ -41,5 +41,6 @@
         @livewireScripts
 
         @stack('scripts')
+        @include('assets.components.falcon-scripts')
     </body>
 </html>
