@@ -191,7 +191,6 @@
         </div>
     </div>
 </div>
-</div>
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg mt-6" role="document">
