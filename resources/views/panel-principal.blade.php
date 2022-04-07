@@ -58,7 +58,4 @@
         </div>
     </div>
 </div>
-<a class="btn btn-primary mb-2" href="{{ route('ControlFichas.index') }}">Control de Fichas</a>
-<a class="btn btn-primary mb-2" href="{{ route('Prospectos.index') }}">Prospectos</a>
-<a class="btn btn-primary mb-2" href="{{ route('Agenda.index') }}">Agenda</a>
 @endsection

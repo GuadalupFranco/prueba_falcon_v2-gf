@@ -71,7 +71,7 @@
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="#">Grupos de inducción</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('GruposInduccion.index') }}">Grupos de inducción</a>
                 </div>
             </div>
         </div>
