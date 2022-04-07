@@ -2,13 +2,26 @@
 
 @section('content')
 
-<nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Menú</a></li>
-        <li class="breadcrumb-item"><a href="#">Servicios escolares</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Prospectos</li>
-    </ol>
-</nav>
+{{-- Array para el breadcrumb --}}
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menu"
+    ],
+    [
+        "link" => "PanelPrincipal.index",
+        "name" => "Servicios escolares"
+    ],
+    [
+        "link" => "Prospectos.index",
+        "name" => "Prospectos",
+    ]
+    ]
+@endphp
+
+<x-breadcrumb-head :navs="$navs"/>
+
 <h3 class="text-center my-2">Prospectos</h3>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item"><a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab"
@@ -28,11 +41,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-success btn-sm me-2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button class="btn btn-success btn-sm me-2" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                 <span class="far fa-file-excel fs-1 me-2"></span>
                                 Calificaciones propedeútico
                             </button>
-                            <button class="btn btn-success btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button class="btn btn-success btn-sm" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                 <span class="far fa-file-excel fs-1 me-2"></span>
                                 Calificaciones ExBach
                             </button>
@@ -192,11 +207,13 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg mt-6" role="document">
         <div class="modal-content border-0">
             <div class="position-absolute top-0 end-0 mt-3 me-3 z-index-1">
-                <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
                 <div class="bg-light rounded-top-lg py-3 ps-4 pe-6">
@@ -206,10 +223,10 @@
                 @yield('modal-body')
                 <form action="" method="POST" enctype="multipart/form-data">
                     <div class="p-4 pb-0">
-                            <div class="mb-3">
-                                <label class="form-label" for="customFile">Subir archivo .CSV</label>
-                                <input class="form-control" id="customFile" type="file"/>
-                            </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="customFile">Subir archivo .CSV</label>
+                            <input class="form-control" id="customFile" type="file" />
+                        </div>
                     </div>
                     <div class="modal-footer">
                         @yield('modal-footer')
@@ -220,6 +237,6 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
 <script src="/vendors/dropzone/dropzone.min.js"></script>
 @endsection

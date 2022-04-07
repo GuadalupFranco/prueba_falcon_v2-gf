@@ -2,13 +2,28 @@
 
 @section('content')
 
-<nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Menú</a></li>
-        <li class="breadcrumb-item"><a href="#">Servicios escolares</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Grupos de inducción</li>
-    </ol>
-</nav>
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menu"
+    ],
+    [
+        "link" => "PanelPrincipal.index",
+        "name" => "Servicios escolares"
+    ],
+    [
+        "link" => "GruposInduccion.index",
+        "name" => "Grupo",
+    ],
+    [
+        "name" => "Grupo 1",
+    ]
+    ]
+@endphp
+
+<x-breadcrumb-head :navs="$navs"/>
+
 <h3 class="text-center my-2">Grupo 1</h3>
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">

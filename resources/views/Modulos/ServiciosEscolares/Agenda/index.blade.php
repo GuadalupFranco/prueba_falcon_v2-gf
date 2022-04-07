@@ -6,7 +6,24 @@
 </head>
 @section('content')
 
-<x-breadcrumb></x-breadcrumb>
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menu"
+    ],
+    [
+        "link" => "PanelPrincipal.index",
+        "name" => "Servicios escolares"
+    ],
+    [
+        "link" => "Agenda.index",
+        "name" => "Agenda",
+    ]
+    ]
+@endphp
+
+<x-breadcrumb-head :navs="$navs"/>
 
 <div class="container" id="top">
     <div class="card mb-3 overflow-hidden">
