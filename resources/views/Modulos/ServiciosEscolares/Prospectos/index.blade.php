@@ -1,5 +1,6 @@
 @extends('welcome')
 
+
 @section('content')
 
 <nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
