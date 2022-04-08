@@ -27,7 +27,7 @@ $navs = [
 <h3 class="text-center my-2">Grupo 1</h3>
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card overflow-hidden" style="width: 20rem;">
+        <div class="card overflow-hidden w-sm-75">
             <div class="card-img-top">
                 <img class="img-fluid" src="/assets/img/generic/1.jpg" alt="Card image cap" />
             </div>
@@ -43,7 +43,7 @@ $navs = [
         </div>
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card overflow-hidden" style="width: 20rem;">
+        <div class="card overflow-hidden w-sm-75">
             <div class="card-img-top">
                 <img class="img-fluid" src="/assets/img/generic/2.jpg" alt="Card image cap" />
             </div>
@@ -59,7 +59,7 @@ $navs = [
         </div>
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card overflow-hidden" style="width: 20rem;">
+        <div class="card overflow-hidden w-sm-75">
             <div class="card-img-top">
                 <img class="img-fluid" src="/assets/img/generic/3.jpg" alt="Card image cap" />
             </div>
@@ -188,6 +188,5 @@ $navs = [
             </div>
         </div>
     </div>
-</div>
 </div>
 @endsection

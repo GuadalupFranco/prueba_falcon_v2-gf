@@ -1,13 +1,19 @@
 @extends('welcome')
 
 @section('content')
-<nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="">Menú</a></li>
-        <li class="breadcrumb-item"><a href="#">Servicios escolares</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Proyecciones</li>
-    </ol>
-</nav>
+
+{{-- Array para el breadcrumb --}}
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menu"
+    ]
+    ]
+@endphp
+
+<x-breadcrumb-head :navs="$navs"/>
+
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
