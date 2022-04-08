@@ -18,7 +18,7 @@
               <span class="d-none d-sm-inline-block ms-1">New</span>
             </button>
             <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
+              <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 650px">
                 <div class="modal-content position-relative">
                   <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
                     <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>

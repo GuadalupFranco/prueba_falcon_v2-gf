@@ -27,8 +27,8 @@
             <td class="script_info text-wrap"><div class="d-inline-block">script.txt<span class="material-icons text-secundary fs-3">file_present</span></div></td>
             <td class="service_id text-wrap">null</td>
             <td class="text-end">
-                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-periodo-modal" role="button">editar</button>
-                <div class="modal fade" id="editar-periodo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-convocatoria-modal" role="button">editar</button>
+                <div class="modal fade" id="editar-convocatoria-modal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
                     <div class="modal-content position-relative">
                         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
@@ -38,7 +38,7 @@
                         <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
                             <h4 class="mb-1" id="modalExampleDemoLabel"> Editar convocatoria </h4>
                         </div>
-                        @include('modulos.super-usuario.administracion-periodos.period.formulario-periodo') 
+                        @include('modulos.super-usuario.administracion-periodos.convocation.formulario-convocatoria') 
 
                         </div>
                         <div class="modal-footer mx-0 my-0">
@@ -63,8 +63,8 @@
             <td class="script_info text-wrap"><div class="d-inline-block">script.txt<span class="material-icons text-secundary fs-3">file_present</span></div></td>
             <td class="service_id text-wrap">null</td>
             <td class="text-end">
-                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-periodo-modal" role="button">editar</button>
-                <div class="modal fade" id="editar-periodo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-convocatoria-modal" role="button">editar</button>
+                <div class="modal fade" id="editar-convocatoria-modal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
                     <div class="modal-content position-relative">
                         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
@@ -99,8 +99,8 @@
             <td class="script_info text-wrap"><div class="d-inline-block">script.txt<span class="material-icons text-secundary fs-3">file_present</span></div></td>
             <td class="service_id text-wrap">205</td>
             <td class="text-end">
-                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-periodo-modal" role="button">editar</button>
-                <div class="modal fade" id="editar-periodo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-convocatoria-modal" role="button">editar</button>
+                <div class="modal fade" id="editar-convocatoria-modal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
                     <div class="modal-content position-relative">
                         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
@@ -135,8 +135,8 @@
             <td class="script_info text-wrap"><div class="d-inline-block">script.txt<span class="material-icons text-secundary fs-3">file_present</span></div></td>
             <td class="service_id text-wrap">192</td>
             <td class="text-end">
-                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-periodo-modal" role="button">editar</button>
-                <div class="modal fade" id="editar-periodo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <button class="btn btn-falcon-default mt-2" data-bs-toggle="modal" data-bs-target="#editar-convocatoria-modal" role="button">editar</button>
+                <div class="modal fade" id="editar-convocatoria-modal" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px">
                     <div class="modal-content position-relative">
                         <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
