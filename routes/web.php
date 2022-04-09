@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ServiciosEscolares\{ControlFichas\ControlFichasController, Prospectos\Prospectos, Agenda\AgendaController, PanelPrincipal\PanelPrincipalController, GruposInduccion\GruposInduccionController};
+use App\Http\Controllers\DireccionCarrera\{ConsultaGruposCI\ConsultaGruposCIController, ConsultaGruposBA\ConsultaGruposBAController, 
+    AsignaProfesoresCI\AsignaProfesoresCIController, AsignaProfesoresBA\AsignaProfesoresBAController, PanelPrincipal\PanelController};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,27 +14,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/direccion_carrera/', function () {
-    return view('modulos.direccion_carrera.panel');
-})->name('direccion_carrera.panel');
-
-Route::get('/direccion_carrera/asigna_profesores/curso-induccion', function () {
-    return view('modulos.direccion_carrera.asigna_profesores.curso-induccion');
-})->name('asigna_profesores.curso-induccion');
-
-Route::get('/direccion_carrera/consulta_grupos/curso-induccion', function () {
-    return view('modulos.direccion_carrera.consulta_grupos.curso-induccion');
-})->name('consulta_grupos.curso-induccion');
-
-Route::get('/direccion_carrera/asigna_profesores/bachillerato-avanzado', function () {
-    return view('modulos.direccion_carrera.asigna_profesores.bachillerato-avanzado');
-})->name('asigna_profesores.bachillerato-avanzado');
-
-Route::get('/direccion_carrera/consulta_grupos/bachillerato-avanzado', function () {
-    return view('modulos.direccion_carrera.consulta_grupos.bachillerato-avanzado');
-})->name('consulta_grupos.bachillerato-avanzado');
-
-
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('panel-principal');
@@ -47,3 +28,10 @@ Route::resource('Prospectos', Prospectos::class)->middleware('auth');
 Route::resource('Agenda', AgendaController::class)->middleware('auth');
 Route::resource('PanelPrincipal', PanelPrincipalController::class)->middleware('auth');
 Route::resource('GruposInduccion', GruposInduccionController::class)->middleware('auth');
+
+/* RUTAS DE DIRECCIÓN DE CARRERA */
+Route::resource('DCPanelPrincipal', PanelController::class)->middleware('auth');
+Route::resource('ConsultaGruposCI', ConsultaGruposCIController::class)->middleware('auth');
+Route::resource('ConsultaGruposBA', ConsultaGruposBAController::class)->middleware('auth');
+Route::resource('AsignaProfesoresCI', AsignaProfesoresCIController::class)->middleware('auth');
+Route::resource('AsignaProfesoresBA', AsignaProfesoresBAController::class)->middleware('auth');
