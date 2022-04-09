@@ -23,7 +23,7 @@ class GruposInduccionController extends Controller{
 
     public function show($id)
     {
-        //
+        return view('Modulos.ServiciosEscolares.GruposInduccion.show');
     }
 
     public function edit($id)

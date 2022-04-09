@@ -14,17 +14,70 @@ $navs = [
     ],
     [
         "link" => "GruposInduccion.index",
-        "name" => "Grupos de Inducción",
+        "name" => "Grupo",
+    ],
+    [
+        "name" => "S174",
     ]
     ]
 @endphp
 
 <x-breadcrumb-head :navs="$navs"/>
 
-<h3 class="text-center my-2">Grupos de Inducción</h3>
+<h3 class="text-center my-2">Grupo 1</h3>
+<div class="row">
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card overflow-hidden w-sm-75">
+            <div class="card-img-top">
+                <img class="img-fluid" src="/assets/img/generic/1.jpg" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">Nombre del docente</h5>
+                <p class="card-text">
+                    <span class="far fa-envelope me-2"></span><a href="#">example@example.com</a><br>
+                    <span class="fas fa-phone-alt me-2"></span>442 123 4567<br>
+                    <span class="far fa-address-card me-2"></span>2392 Main Avenue, Penasauka, New Jersey 02139<br>
+                </p>
+                <p class="card-text text-center">Materia ejemplo</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card overflow-hidden w-sm-75">
+            <div class="card-img-top">
+                <img class="img-fluid" src="/assets/img/generic/2.jpg" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">Nombre del docente</h5>
+                <p class="card-text">
+                    <span class="far fa-envelope me-2"></span><a href="#">example@example.com</a><br>
+                    <span class="fas fa-phone-alt me-2"></span>442 123 4567<br>
+                    <span class="far fa-address-card me-2"></span>2392 Main Avenue, Penasauka, New Jersey 02139<br>
+                </p>
+                <p class="card-text text-center">Materia ejemplo</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card overflow-hidden w-sm-75">
+            <div class="card-img-top">
+                <img class="img-fluid" src="/assets/img/generic/3.jpg" alt="Card image cap" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">Nombre del docente</h5>
+                <p class="card-text">
+                    <span class="far fa-envelope me-2"></span><a href="#">example@example.com</a><br>
+                    <span class="fas fa-phone-alt me-2"></span>442 123 4567<br>
+                    <span class="far fa-address-card me-2"></span>2392 Main Avenue, Penasauka, New Jersey 02139<br>
+                </p>
+                <p class="card-text text-center">Materia ejemplo</p>
+            </div>
+        </div>
+    </div>
+</div>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item"><a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab-home" role="tab"
-            aria-controls="tab-home" aria-selected="true">Grupos de Inducción</a></li>
+            aria-controls="tab-home" aria-selected="true">Alumnos</a></li>
 </ul>
 <div class="tab-content border-x border-bottom p-3" id="myTabContent">
     <div class="tab-pane fade show active" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
@@ -32,11 +85,17 @@ $navs = [
             <div class="card-header">
                 <div class="row flex-between-end">
                     <div class="col-auto align-self-center">
-                        <h5 class="mb-0" data-anchor="data-anchor" id="pagination-with-numbering">Listado de los grupos de Inducción<a
+                        <h5 class="mb-0" data-anchor="data-anchor" id="pagination-with-numbering">Prospectos<a
                                 class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
                                 href="#pagination-with-numbering" style="padding-left: 0.375em;"></a></h5>
                     </div>
                 </div>
+                <!--<div class="col-12 ms-auto">
+                        <button class="btn btn-info m-auto float-end" type="button">
+                        <span class="fas fa-file text-white fs-2 me-2"></span>
+                        Nuevo
+                        </button>
+                    </div>-->
             </div>
             <div class="card-body pt-0">
                 <div class="tab-content">
@@ -49,48 +108,48 @@ $navs = [
                                 <table class="table table-bordered table-striped fs--1 mb-0">
                                     <thead class="bg-200 text-900">
                                         <tr>
-                                            <th class="sort" data-sort="name">Grupo</th>
-                                            <th class="sort" data-sort="email">Total de estudiantes</th></th>
-                                            <th class="sort" data-sort="age">Procesos</th>
+                                            <th class="sort" data-sort="name">Nombre del alumno</th>
+                                            <th class="sort" data-sort="email">Correo electrónico</th></th>
+                                            <th class="sort" data-sort="email">Teléfono</th></th>
+                                            <th class="sort" data-sort="age">Edad</th>
                                         </tr>
                                     </thead>
                                     <tbody class="list">
                                         <tr>
-                                            <td class="name">S174</td>
-                                            <td class="name">17/30</td>
-                                            <td class="name text-center">
-                                                <span class="far fa-eye fs--1"></span>
-                                            </td>
+                                            <td class="name">Nombre del alumno</td>
+                                            <td class="name">correo@example.com</td>
+                                            <td class="name">442 123 4567</td>
+                                            <td class="name">18</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">S174</td>
-                                            <td class="name">17/30</td>
-                                            <td class="name text-center">
-                                                <span class="far fa-eye fs--1"></span>
-                                            </td>
+                                            <td class="name">Nombre del alumno</td>
+                                            <td class="name">correo@example.com</td>
+                                            <td class="name">442 123 4567</td>
+                                            <td class="name">18</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">S174</td>
-                                            <td class="name">17/30</td>
-                                            <td class="name text-center">
-                                                <span class="far fa-eye fs--1"></span>
-                                            </td>
+                                            <td class="name">Nombre del alumno</td>
+                                            <td class="name">correo@example.com</td>
+                                            <td class="name">442 123 4567</td>
+                                            <td class="name">18</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">S174</td>
-                                            <td class="name">17/30</td>
-                                            <td class="name text-center">
-                                                <span class="far fa-eye fs--1"></span>
-                                            </td>
+                                            <td class="name">Nombre del alumno</td>
+                                            <td class="name">correo@example.com</td>
+                                            <td class="name">442 123 4567</td>
+                                            <td class="name">18</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">S174</td>
-                                            <td class="name">17/30</td>
-                                            <td class="name text-center">
-                                                <a href="{{ route('GruposInduccion.show', 1) }}">
-                                                    <span class="far fa-eye fs--1"></span>
-                                                </a>
-                                            </td>
+                                            <td class="name">Nombre del alumno</td>
+                                            <td class="name">correo@example.com</td>
+                                            <td class="name">442 123 4567</td>
+                                            <td class="name">18</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Nombre del alumno</td>
+                                            <td class="name">correo@example.com</td>
+                                            <td class="name">442 123 4567</td>
+                                            <td class="name">18</td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -12,10 +12,6 @@ $navs = [
     [
         "link" => "PanelPrincipal.index",
         "name" => "Servicios escolares"
-    ],
-    [
-        "link" => "Prospectos.index",
-        "name" => "Prospectos",
     ]
     ]
 @endphp
