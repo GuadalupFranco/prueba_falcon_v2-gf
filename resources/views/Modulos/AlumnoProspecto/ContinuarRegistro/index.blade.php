@@ -1,9 +1,5 @@
 @extends('welcome')
 
-@php
-$institucionProcedencia = 'Informacion previamente introducida';
-@endphp
-
 @section('content')
     <div class="container-fluid">
         <h2 class="text-center">Completar Registro</h2>
