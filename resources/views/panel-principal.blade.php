@@ -58,7 +58,7 @@ $navs = [
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
                     <h5 class="card-title text-white">Vinculación</h5>
-                    <a class="btn btn-primary" href="#">Panel principal</a>
+                    <a class="btn btn-primary" href="{{ route('PanelVinculacion.index') }}">Panel principal</a>
                 </div>
             </div>
         </div>
