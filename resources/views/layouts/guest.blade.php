@@ -18,7 +18,7 @@
 
         @include('assets.components.falcon-styles')
     </head>
-    <body class="bg-light font-sans antialiased">
+    <body class="font-sans antialiased">
         {{ $slot }}
         @include('assets.components.falcon-scripts')
     </body>

@@ -9,6 +9,7 @@
   <!-- ===============================================-->
   <div class="main" id="top">
     <div class="container" data-layout="container">
+      {{--@include('assets.components.top-bar')--}}
       @include('assets.components.side-bar')
       <div class="content">
         @include('assets.components.header')

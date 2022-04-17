@@ -26,10 +26,14 @@
 
         @livewire('profile.logout-other-browser-sessions-form')
 
+        {{-- Apartado para borrar el usuario
         @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
             <x-jet-section-border />
 
             @livewire('profile.delete-user-form')
         @endif
+        --}}
+        <x-jet-section-border />
+        @include('profile.update-theme')
     </div>
 </x-app-layout>

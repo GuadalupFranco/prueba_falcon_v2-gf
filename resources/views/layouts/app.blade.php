@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="en-US" dir="ltr" class="chrome windows fontawesome-i2svg-active fontawesome-i2svg-complete">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        @livewireStyles
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}" defer></script>
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+    @include('assets.components.falcon-styles')
+</head>
 
-        @include('assets.components.falcon-styles')
-    </head>
-    <body class="font-sans antialiased bg-light">
-        <x-jet-banner />
-        @livewire('navigation-menu')
-
-        <!-- Page Heading -->
-        <header class="d-flex py-3 bg-white shadow-sm border-bottom">
-            <div class="container">
-                {{ $header }}
+<body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <div class="main" id="top">
+        <div class="container" data-layout="container">
+            @include('assets.components.side-bar')
+            <div class="content">
+                @include('assets.components.header')
+                <main class="container my-5">
+                    {{ $slot }}
+                </main>
+                @include('assets.components.footer')
             </div>
-        </header>
+        </div>
+    </div>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+    @stack('modals')
 
-        <!-- Page Content -->
-        <main class="container my-5">
-            {{ $slot }}
-        </main>
+    @livewireScripts
 
-        @stack('modals')
+    @stack('scripts')
+    @include('assets.components.button-configuration')
+    @include('assets.components.falcon-scripts')
+</body>
 
-        @livewireScripts
-
-        @stack('scripts')
-        @include('assets.components.falcon-scripts')
-    </body>
 </html>

@@ -9961,8 +9961,8 @@ defineJQueryPlugin(Carousel);
  * ------------------------------------------------------------------------
  */
 
-const NAME$a = 'collapse';
-const DATA_KEY$9 = 'bs.collapse';
+const NAME$a = 'collapse-jetstream';
+const DATA_KEY$9 = 'bs.collapse-jetstream';
 const EVENT_KEY$9 = `.${DATA_KEY$9}`;
 const DATA_API_KEY$5 = '.data-api';
 const Default$9 = {
@@ -9979,15 +9979,15 @@ const EVENT_HIDE$5 = `hide${EVENT_KEY$9}`;
 const EVENT_HIDDEN$5 = `hidden${EVENT_KEY$9}`;
 const EVENT_CLICK_DATA_API$4 = `click${EVENT_KEY$9}${DATA_API_KEY$5}`;
 const CLASS_NAME_SHOW$7 = 'show';
-const CLASS_NAME_COLLAPSE = 'collapse';
-const CLASS_NAME_COLLAPSING = 'collapsing';
-const CLASS_NAME_COLLAPSED = 'collapsed';
+const CLASS_NAME_COLLAPSE = 'collapse-jetstream';
+const CLASS_NAME_COLLAPSING = 'collapsing-jetstream';
+const CLASS_NAME_COLLAPSED = 'collapsed-jetstream';
 const CLASS_NAME_DEEPER_CHILDREN = `:scope .${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`;
-const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
+const CLASS_NAME_HORIZONTAL = 'collapse-horizontal-jetstream';
 const WIDTH = 'width';
 const HEIGHT = 'height';
-const SELECTOR_ACTIVES = '.collapse.show, .collapse.collapsing';
-const SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="collapse"]';
+const SELECTOR_ACTIVES = '.collapse-jetstream.show, .collapse.collapsing-jetstream';
+const SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="collapse-jetstream"]';
 /**
  * ------------------------------------------------------------------------
  * Class Definition

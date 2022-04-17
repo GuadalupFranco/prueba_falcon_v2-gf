@@ -5,7 +5,7 @@
         aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span
                 class="toggle-line"></span></span></button>
     <a class="navbar-brand me-1 me-sm-3" href="index.html">
-        <div class="d-flex align-items-center"><img class="me-2" src="assets/img/icons/spot-illustrations/falcon.png"
+        <div class="d-flex align-items-center"><img class="me-2" src="/assets/img/icons/spot-illustrations/falcon.png"
                 alt="" width="40"><span class="font-sans-serif">falcon</span>
         </div>
     </a>
@@ -113,7 +113,7 @@
                             class="dropdown-item px-card py-2" href="#!">
                             <div class="d-flex align-items-center">
                                 <div class="file-thumbnail me-2"><img class="border h-100 w-100 fit-cover rounded-3"
-                                        src="assets/img/products/3-thumb.png" alt=""></div>
+                                        src="/assets/img/products/3-thumb.png" alt=""></div>
                                 <div class="flex-1">
                                     <h6 class="mb-0 title">iPhone</h6>
                                     <p class="fs--2 mb-0 d-flex"><span class="fw-semi-bold">Antony</span><span
@@ -122,8 +122,9 @@
                             </div>
                         </a><a class="dropdown-item px-card py-2" href="#!">
                             <div class="d-flex align-items-center">
-                                <div class="file-thumbnail me-2"><img class="img-fluid" src="assets/img/icons/zip.png"
-                                        alt=""></div>
+                                <div class="file-thumbnail me-2">
+                                    <img class="img-fluid" src="/assets/img/icons/zip.png" alt="">
+                                </div>
                                 <div class="flex-1">
                                     <h6 class="mb-0 title">Falcon v1.8.2</h6>
                                     <p class="fs--2 mb-0 d-flex"><span class="fw-semi-bold">John</span><span
@@ -136,7 +137,7 @@
                             class="dropdown-item px-card py-2" href="pages/user/profile.html">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-l status-online me-2">
-                                    <img class="rounded-circle" src="assets/img/team/1.jpg" alt="">
+                                    <img class="rounded-circle" src="/assets/img/team/1.jpg" alt="">
 
                                 </div>
                                 <div class="flex-1">
@@ -147,7 +148,7 @@
                         </a><a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-l me-2">
-                                    <img class="rounded-circle" src="assets/img/team/2.jpg" alt="">
+                                    <img class="rounded-circle" src="/assets/img/team/2.jpg" alt="">
 
                                 </div>
                                 <div class="flex-1">
@@ -158,7 +159,7 @@
                         </a><a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-l me-2">
-                                    <img class="rounded-circle" src="assets/img/team/3.jpg" alt="">
+                                    <img class="rounded-circle" src="/assets/img/team/3.jpg" alt="">
 
                                 </div>
                                 <div class="flex-1">
@@ -176,7 +177,23 @@
         </li>
     </ul>
     <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
-        <!-- Botón que no sirve -->
+        <li class="nav-item">
+            <div class="theme-control-toggle fa-icon-wait px-2">
+                <input class="form-check-input ms-0 theme-control-toggle-input" id="mode-fluid" type="checkbox" data-theme-control="isFluid">
+                {{--<input class="form-check-input ms-0 theme-control-toggle-input" id="themeControlToggle" type="checkbox" data-theme-control="theme" value="dark">--}}
+                <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="mode-fluid"
+                    data-bs-toggle="tooltip" data-bs-placement="left" title=""
+                    data-bs-original-title="Comprimir pantalla" aria-label="Cambiar a modo claro">
+                    <span class="fas fa-compress-alt fa-w-16 fs-0"></span>
+                </label>
+                <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="mode-fluid"
+                    data-bs-toggle="tooltip" data-bs-placement="left" title=""
+                    data-bs-original-title="Expandir pantalla" aria-label="Cambiar a modo oscuro">
+                    <span class="fas fa-expand-alt fa-w-16 fs-0"></span>
+                </label>
+            </div>
+        </li>
+        <!-- Botón para el modo claro/oscuro-->
         <li class="nav-item">
             <div class="theme-control-toggle fa-icon-wait px-2">
                 <input class="form-check-input ms-0 theme-control-toggle-input" id="themeControlToggle" type="checkbox"
@@ -190,7 +207,8 @@
                         <path fill="currentColor"
                             d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
                         </path>
-                    </svg><!-- <span class="fas fa-sun fs-0"></span> Font Awesome fontawesome.com --></label>
+                    </svg><!-- <span class="fas fa-sun fs-0"></span> Font Awesome fontawesome.com -->
+                </label>
                 <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle"
                     data-bs-toggle="tooltip" data-bs-placement="left" title=""
                     data-bs-original-title="Cambiar a modo oscuro" aria-label="Cambiar a modo oscuro"><svg
@@ -200,10 +218,12 @@
                         <path fill="currentColor"
                             d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
                         </path>
-                    </svg><!-- <span class="fas fa-moon fs-0"></span> Font Awesome fontawesome.com --></label>
+                    </svg><!-- <span class="fas fa-moon fs-0"></span> Font Awesome fontawesome.com -->
+                </label>
             </div>
         </li>
-        <!-- Botón que no sirve -->
+        <!-- Botón para el modo claro/oscuro -->
+
         <li class="nav-item dropdown">
             <a class="nav-link notification-indicator notification-indicator-primary px-0 fa-icon-wait"
                 id="navbarDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -249,7 +269,7 @@
                                             <a class="notification notification-flush notification-unread" href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-2xl me-3">
-                                                        <img class="rounded-circle" src="assets/img/team/1-thumb.png"
+                                                        <img class="rounded-circle" src="/assets/img/team/1-thumb.png"
                                                             alt="">
 
                                                     </div>
@@ -296,7 +316,7 @@
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-2xl me-3">
                                                         <img class="rounded-circle"
-                                                            src="assets/img/icons/weather-sm.jpg" alt="">
+                                                            src="/assets/img/icons/weather-sm.jpg" alt="">
 
                                                     </div>
                                                 </div>
@@ -315,7 +335,7 @@
                                                 href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-xl me-3">
-                                                        <img class="rounded-circle" src="assets/img/logos/oxford.png"
+                                                        <img class="rounded-circle" src="/assets/img/logos/oxford.png"
                                                             alt="">
 
                                                     </div>
@@ -334,7 +354,7 @@
                                             <a class="border-bottom-0 notification notification-flush" href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-xl me-3">
-                                                        <img class="rounded-circle" src="assets/img/team/10.jpg" alt="">
+                                                        <img class="rounded-circle" src="/assets/img/team/10.jpg" alt="">
 
                                                     </div>
                                                 </div>
@@ -371,6 +391,7 @@
             </div>
 
         </li>
+        {{--@php(dd(Auth::all()))--}}
         <li class="nav-item dropdown"><a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-xl">
