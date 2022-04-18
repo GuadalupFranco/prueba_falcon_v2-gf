@@ -86,3 +86,24 @@ Route::resource('AsignaProfesoresCI', AsignaProfesoresCIController::class)->midd
 Route::resource('AsignaProfesoresBA', AsignaProfesoresBAController::class)->middleware('auth');
 
 // Fin rutas guadalupe-franco
+
+// Rutas Branch gerson-perez
+/*
+|-------------------------------------------------------------------
+|    Rutas de Super usuario
+|-------------------------------------------------------------------
+|   A partir de aquí se escribirán todas las rutas a las que puede acceder el super usuario
+|
+*/
+Route::view('/vista-panel-principal-superusuario', 'modulos/super-usuario/vista-panel-principal-superusuario')->name('panel-principal-superusuario');
+
+/*
+|-------------------------------------------------------------------
+|    Rutas de módulo "Administración de periodos"
+|-------------------------------------------------------------------
+|   A partir de aquí se escribirán todas las rutas relacionadas con la administración de periodos, tareas y convocatorias
+|
+*/
+Route::view('/administracion-periodos', 'modulos/super-usuario/administracion-periodos/vista-general-administracion-periodos')->name('vista-general-periodos');
+// Fin rutas gerson-perez
+

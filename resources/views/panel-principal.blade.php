@@ -5,14 +5,14 @@
 {{-- Array para el breadcrumb --}}
 @php
 $navs = [
-    [
-        "link" => "/",
-        "name" => "Menu"
-    ]
-    ]
+[
+"link" => "/",
+"name" => "Menu"
+]
+]
 @endphp
 
-<x-breadcrumb-head :navs="$navs"/>
+<x-breadcrumb-head :navs="$navs" />
 
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">
@@ -63,5 +63,20 @@ $navs = [
             </div>
         </div>
     </div>
+    {{-- Cambios de Gerson --}}
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card overflow-hidden" style="width: 20rem;">
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+                    alt="Card image cap" /></div>
+            <div class="card-body">
+                <h5 class="card-title">Panel Superusuario</h5>
+                <p>
+                    <a class="btn btn-falcon-default mt-2 stretched-link"
+                        href="{{route('panel-principal-superusuario')}}" role="button">Ir</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {{-- Fin de los cambios de Gerson --}}
 </div>
 @endsection
