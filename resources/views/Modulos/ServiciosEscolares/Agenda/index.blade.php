@@ -4,6 +4,10 @@
     <link href="/vendors/fullcalendar/main.min.css" rel="stylesheet">
     <link href="/vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
 </head>
+
+
+
+
 @section('content')
 
 @php
@@ -125,14 +129,28 @@ $navs = [
                             <option value="warning">Programación Orientada a Objetos</option>
                         </select></div>
                 </div>
+<<<<<<< HEAD
                 <div class="card-footer d-flex justify-content-end align-items-center bg-light"><a class="me-3 text-600"
                         href="../app/events/create-an-event.html">More options</a><button class="btn btn-primary px-4"
                         type="submit">Save</button></div>
             </form>
+=======
+            </div>
+            
+            
+>>>>>>> origin/javier-camacho
         </div>
     </div>
 </div>
 
+<<<<<<< HEAD
+=======
+    
+
+    
+<script src="/path/to/cdn/jquery.min.js"></script>
+<script src="mdtimepicker.js"></script>
+>>>>>>> origin/javier-camacho
 <script>
     var isFluid = JSON.parse(localStorage.getItem('isFluid'));
     if (isFluid) {

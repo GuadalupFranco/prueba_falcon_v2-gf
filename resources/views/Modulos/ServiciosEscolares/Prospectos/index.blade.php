@@ -1,5 +1,6 @@
 @extends('welcome')
 
+
 @section('content')
 
 {{-- Array para el breadcrumb --}}

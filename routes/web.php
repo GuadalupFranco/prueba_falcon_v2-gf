@@ -28,3 +28,26 @@ Route::resource('PanelVinculacion', PanelVinculacionController::class)->middlewa
 Route::resource('AgendaPromocional', AgendaPromocionalController::class)->middleware('auth');
 Route::resource('VisitaGuiada', VisitaGuiadaController::class)->middleware('auth');
 Route::resource('Preregistro', PreregistroController::class)->middleware('auth');
+
+// Rutas Branch javier-camacho
+Route::get('/FormatoSolicitud1', function () {
+    return view('Modulos.AlumnoProspecto.FormatoSolicitud1.index');
+});
+
+Route::get('/PanelProspecto', function () {
+    return view('Modulos.AlumnoProspecto.PanelProspecto.index');
+});
+
+Route::get('/AccesoProspecto', function () {
+    return view('Modulos.AlumnoProspecto.AccesoProspecto.index');
+});
+
+Route::get('/InicioAlumno', function () {
+    return view('Modulos.AlumnoProspecto.InicioAlumno.index');
+});
+
+Route::get('/ValidarDocumentos', function () {
+    return view('Modulos.ServiciosEscolares.ValidarDocumentos.index');
+});
+
+// fin rutas javier-camacho
