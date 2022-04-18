@@ -8,7 +8,7 @@
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Seleccione el tema que más le guste para la barra lateral (en caso de que a tenga habilitada).') }}
+        {{ __('Seleccione el tema que más le guste para la barra lateral (en caso de que la tenga habilitada).') }}
     </x-slot>
 
     <x-slot name="form">

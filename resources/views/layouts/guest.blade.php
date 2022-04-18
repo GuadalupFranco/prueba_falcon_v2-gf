@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" class="chrome windows fontawesome-i2svg-active fontawesome-i2svg-complete">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,5 +21,6 @@
     <body class="font-sans antialiased">
         {{ $slot }}
         @include('assets.components.falcon-scripts')
+        <script src="/vendors/typed.js/typed.js"></script>
     </body>
 </html>

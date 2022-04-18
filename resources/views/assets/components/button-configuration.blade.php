@@ -2,20 +2,15 @@
     aria-labelledby="settings-offcanvas">
     <div class="offcanvas-header settings-panel-header bg-shape">
         <div class="z-index-1 py-1 light">
-            <h5 class="text-white"> <svg class="svg-inline--fa fa-palette fa-w-16 me-2 fs-0" aria-hidden="true"
-                    focusable="false" data-prefix="fas" data-icon="palette" role="img"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                    <path fill="currentColor"
-                        d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
-                    </path>
-                </svg><!-- <span class="fas fa-palette me-2 fs-0"></span> Font Awesome fontawesome.com -->Settings</h5>
-            <p class="mb-0 fs--1 text-white opacity-75"> Set your own customized style</p>
+            <h5 class="text-white">
+                <span class="fas fa-palette me-2 fs-0"></span>
+                Configuraciones
+            </h5>
+            <p class="mb-0 fs--1 text-white opacity-75"> Customiza el diseño</p>
         </div>
-        <button class="btn-close btn-close-white z-index-1 mt-0" type="button" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+        <button class="btn-close btn-close-white z-index-1 mt-0" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body scrollbar-overlay px-card os-host os-theme-dark os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition"
-        id="themeController">
+    <div class="offcanvas-body scrollbar-overlay px-card os-host os-theme-dark os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition" id="themeController">
         <div class="os-resize-observer-host observed">
             <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
         </div>
@@ -26,33 +21,7 @@
         <div class="os-padding">
             <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
                 <div class="os-content" style="padding: 16px 20px; height: 100%; width: 100%;">
-                    <h5 class="fs-0">Color Scheme</h5>
-                    <p class="fs--1">Choose the perfect color mode for your app.</p>
-                    <div class="btn-group d-block w-100 btn-group-navbar-style">
-                        <div class="row gx-2">
-                            <div class="col-6">
-                                <input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio"
-                                    value="light" data-theme-control="theme" checked="true">
-                                <label class="btn d-inline-block btn-navbar-style fs--1" for="themeSwitcherLight"> <span
-                                        class="hover-overlay mb-2 rounded d-block"><img
-                                            class="img-fluid img-prototype mb-0"
-                                            src="/assets/img/generic/falcon-mode-default.jpg" alt=""></span><span
-                                        class="label-text">Light</span></label>
-                            </div>
-                            <div class="col-6">
-                                <input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio"
-                                    value="dark" data-theme-control="theme">
-                                <label class="btn d-inline-block btn-navbar-style fs--1" for="themeSwitcherDark"> <span
-                                        class="hover-overlay mb-2 rounded d-block"><img
-                                            class="img-fluid img-prototype mb-0"
-                                            src="/assets/img/generic/falcon-mode-dark.jpg" alt=""></span><span
-                                        class="label-text"> Dark</span></label>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-start"><img class="me-2" src="/assets/img/icons/paragraph.svg"
-                            width="20" alt="">
+                    <div class="d-flex align-items-start"><img class="me-2" src="/assets/img/icons/paragraph.svg" width="20" alt="">
                         <div class="flex-1">
                             <h5 class="fs-0 d-flex align-items-center">Navigation Position </h5>
                             <p class="fs--1 mb-2">Select a suitable navigation system for your web application </p>
