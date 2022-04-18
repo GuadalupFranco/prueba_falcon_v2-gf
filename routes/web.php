@@ -107,3 +107,10 @@ Route::view('/vista-panel-principal-superusuario', 'modulos/super-usuario/vista-
 Route::view('/administracion-periodos', 'modulos/super-usuario/administracion-periodos/vista-general-administracion-periodos')->name('vista-general-periodos');
 // Fin rutas gerson-perez
 
+// Rutas Branch antonio-pechir
+Route::get('/prueba', function () {
+    // return view('Modulos.OE.AsignarMaterias', ['status' => "Completado", "nombre" => "Ingeniería en Sistemas Computacionales"]);
+    // return view('Modulos.OE.CapturaPsicometrix');
+    return view('Modulos.OE.ConsultaProgramacionCI');
+});
+// Fin rutas antonio-pechir

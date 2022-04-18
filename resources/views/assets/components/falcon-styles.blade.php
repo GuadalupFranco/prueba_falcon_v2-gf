@@ -34,9 +34,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
 <link href="/vendors/overlayscrollbars/OverlayScrollbars.min.css" rel="stylesheet">
 <link href="/assets/css/theme-rtl.min.css" rel="stylesheet" id="style-rtl" disabled="true">
-<link href="/assets/css/theme.css" rel="stylesheet" id="style-default">
+<link href="/assets/css/theme.min.css" rel="stylesheet" id="style-default">
 <link href="/assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl" disabled="true">
-<link href="/assets/css/user.css" rel="stylesheet" id="user-style-default">
+<link href="/assets/css/user.min.css" rel="stylesheet" id="user-style-default">
+<link rel="stylesheet" href="/vendors/fontawesome/all.min.css">
 
 <script>
     var isRTL = JSON.parse(localStorage.getItem('isRTL'));

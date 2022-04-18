@@ -360,9 +360,7 @@
                                             <a class="border-bottom-0 notification notification-flush" href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-xl me-3">
-                                                        <img class="rounded-circle" src="/assets/img/team/10.jpg"
-                                                            alt="">
-
+                                                        <img class="rounded-circle" src="/assets/img/team/10.jpg" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="notification-body">

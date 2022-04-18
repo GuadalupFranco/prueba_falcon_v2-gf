@@ -66,7 +66,7 @@ $navs = [
     {{-- Cambios de Gerson --}}
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg"
+            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/1.jpg"
                     alt="Card image cap" /></div>
             <div class="card-body">
                 <h5 class="card-title">Panel Superusuario</h5>
