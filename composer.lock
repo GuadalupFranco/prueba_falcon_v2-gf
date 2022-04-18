@@ -1435,7 +1435,11 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
+<<<<<<< HEAD
             "time": "2022-04-03T22:04:27+00:00"
+=======
+            "time": "2022-03-30T14:56:45+00:00"
+>>>>>>> origin/guadalupe-franco
         },
         {
             "name": "laravel/sanctum",
