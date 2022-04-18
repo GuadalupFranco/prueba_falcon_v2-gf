@@ -1,9 +1,6 @@
-
-
-
 @extends('welcome')
 
-@section('name')
+@section('content')
 
 <h1 class=" text-center mt-4 mb-4">Panel Profesor </h1>
 

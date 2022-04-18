@@ -1,9 +1,6 @@
-
-
-
 @extends('welcome')
 
-@section('name')
+@section('content')
 
 <div class="container mx-0 my-0">
 
