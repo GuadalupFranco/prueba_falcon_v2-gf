@@ -51,3 +51,27 @@ Route::get('/ValidarDocumentos', function () {
 });
 
 // fin rutas javier-camacho
+
+// Rutas Branch isay-guerra
+
+Route::get('/panelProfesores', function () { 
+    return view('Modulos.profesor.panel-profesor');
+});
+
+Route::get('/gruposProfesores', function () { 
+    return view('Modulos.profesor.grupos-profesor');
+});
+
+Route::get('/capturaCalificaciones', function () { 
+    return view('Modulos.profesor.captura-calificacion');
+});
+
+Route::get('/gruposProfesoresBA', function () { 
+    return view('Modulos.profesor.grupos-profesorBA');
+});
+
+Route::get('/capturaCalificacionesBA', function () { 
+    return view('Modulos.profesor.captura-calificacionBA');
+});
+
+// Fin rutas isay-guerra
