@@ -1,12 +1,16 @@
 <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand">
-
     <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse"
-        aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span
-                class="toggle-line"></span></span></button>
-    <a class="navbar-brand me-1 me-sm-3" href="index.html">
-        <div class="d-flex align-items-center"><img class="me-2" src="/assets/img/icons/spot-illustrations/falcon.png"
-                alt="" width="40"><span class="font-sans-serif">falcon</span>
+        aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggle-icon">
+            <span class="toggle-line">
+            </span>
+        </span>
+    </button>
+    <a class="navbar-brand me-1 me-sm-3" href="/">
+        <div class="d-flex align-items-center">
+            <img class="me-2" src="/UPQ-logo.svg" alt="" width="40">
+            <span class="font-sans-serif">SIIUPQ</span>
         </div>
     </a>
     <ul class="navbar-nav align-items-center d-none d-lg-block">
@@ -179,7 +183,8 @@
     <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
         <li class="nav-item">
             <div class="theme-control-toggle fa-icon-wait px-2">
-                <input class="form-check-input ms-0 theme-control-toggle-input" id="mode-fluid" type="checkbox" data-theme-control="isFluid">
+                <input class="form-check-input ms-0 theme-control-toggle-input" id="mode-fluid" type="checkbox"
+                    data-theme-control="isFluid">
                 {{--<input class="form-check-input ms-0 theme-control-toggle-input" id="themeControlToggle" type="checkbox" data-theme-control="theme" value="dark">--}}
                 <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="mode-fluid"
                     data-bs-toggle="tooltip" data-bs-placement="left" title=""
@@ -248,7 +253,8 @@
                             <div class="col-auto">
                                 <h6 class="card-header-title mb-0">Notificaciones</h6>
                             </div>
-                            <div class="col-auto ps-0 ps-sm-3"><a class="card-link fw-normal" href="#">Marcar como leídos</a></div>
+                            <div class="col-auto ps-0 ps-sm-3"><a class="card-link fw-normal" href="#">Marcar como
+                                    leídos</a></div>
                         </div>
                     </div>
                     <div class="scrollbar-overlay os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"
@@ -354,7 +360,8 @@
                                             <a class="border-bottom-0 notification notification-flush" href="#!">
                                                 <div class="notification-avatar">
                                                     <div class="avatar avatar-xl me-3">
-                                                        <img class="rounded-circle" src="/assets/img/team/10.jpg" alt="">
+                                                        <img class="rounded-circle" src="/assets/img/team/10.jpg"
+                                                            alt="">
 
                                                     </div>
                                                 </div>
@@ -392,21 +399,26 @@
 
         </li>
         {{--@php(dd(Auth::all()))--}}
-        <li class="nav-item dropdown"><a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown">
+            <a class="nav-link pe-0" id="navbarDropdownUser" href="#" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-xl">
                     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                        @if(Auth::user()->profile_photo_path)
-                            <img src="/storage/{{ Auth::user()->profile_photo_path }}" class="rounded-circle" height="100" width="100">
-                        @else
-                            <img src="{{ Auth::user()->profile_photo_url }}" class="rounded-circle" height="100" width="100">
-                        @endif
+                    @if(Auth::user()->profile_photo_path)
+                    <img src="/storage/{{ Auth::user()->profile_photo_path }}" class="rounded-circle" height="100"
+                        width="100">
                     @else
-                        {{ Auth::user()->name }}
+                    <img src="{{ Auth::user()->profile_photo_url }}" class="rounded-circle" height="100" width="100">
+                    @endif
+                    @else
+                    {{ Auth::user()->name }}
 
-                        <svg class="ms-2" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
+                    <svg class="ms-2" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
                     @endif
 
                 </div>
@@ -423,9 +435,9 @@
                     </x-jet-dropdown-link>
 
                     @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                        <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
-                            {{ __('API Tokens') }}
-                        </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
+                        {{ __('API Tokens') }}
+                    </x-jet-dropdown-link>
                     @endif
 
                     <hr class="dropdown-divider">

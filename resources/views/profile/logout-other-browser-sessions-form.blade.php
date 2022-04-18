@@ -13,7 +13,9 @@
         </x-jet-action-message>
 
         <div>
-            {{ __('Si es necesario, usted puede cerrar las sesiones activas en otros navegadores y dispositivos. Algunas de sus sesiones recientes están listadas debajo. Esta lista no es exhaustiva por lo que si usted cree que sus credenciales fueron robadas, le recomendamos actualizar su contraseña.') }}
+            <p class="fs--1">
+                {{ __('Si es necesario, usted puede cerrar las sesiones activas en otros navegadores y dispositivos. Algunas de sus sesiones recientes están listadas debajo. Esta lista no es exhaustiva por lo que si usted cree que sus credenciales fueron robadas, le recomendamos actualizar su contraseña.') }}
+            </p>
         </div>
 
         @if (count($this->sessions) > 0)

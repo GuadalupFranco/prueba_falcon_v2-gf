@@ -4503,7 +4503,7 @@ function isBooleanAttr(attrName) {
   return booleanAttributes.includes(attrName);
 }
 function attributeShouldntBePreservedIfFalsy(name) {
-  return !["aria-pressed", "aria-checked", "aria-expanded", "aria-selected"].includes(name);
+  return !["aria-pressed", "aria-checked", "aria-expanded-jetstream", "aria-selected"].includes(name);
 }
 function getBinding(el, name, fallback) {
   if (el._x_bindings && el._x_bindings[name] !== void 0)
@@ -10212,7 +10212,7 @@ class Collapse extends BaseComponent {
         elem.classList.add(CLASS_NAME_COLLAPSED);
       }
 
-      elem.setAttribute('aria-expanded', isOpen);
+      elem.setAttribute('aria-expanded-jetstream', isOpen);
     });
   } // Static
 
@@ -10280,8 +10280,8 @@ defineJQueryPlugin(Collapse);
  * ------------------------------------------------------------------------
  */
 
-const NAME$9 = 'dropdown';
-const DATA_KEY$8 = 'bs.dropdown';
+const NAME$9 = 'dropdown-jetstream';
+const DATA_KEY$8 = 'bs.dropdown-jetstream';
 const EVENT_KEY$8 = `.${DATA_KEY$8}`;
 const DATA_API_KEY$4 = '.data-api';
 const ESCAPE_KEY$2 = 'Escape';
@@ -10304,7 +10304,7 @@ const CLASS_NAME_DROPUP = 'dropup';
 const CLASS_NAME_DROPEND = 'dropend';
 const CLASS_NAME_DROPSTART = 'dropstart';
 const CLASS_NAME_NAVBAR = 'navbar';
-const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]';
+const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown-jetstream"]';
 const SELECTOR_MENU = '.dropdown-menu';
 const SELECTOR_NAVBAR_NAV = '.navbar-nav';
 const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
@@ -10395,7 +10395,7 @@ class Dropdown extends BaseComponent {
 
     this._element.focus();
 
-    this._element.setAttribute('aria-expanded', true);
+    this._element.setAttribute('aria-expanded-jetstream', true);
 
     this._menu.classList.add(CLASS_NAME_SHOW$6);
 
@@ -10454,7 +10454,7 @@ class Dropdown extends BaseComponent {
 
     this._element.classList.remove(CLASS_NAME_SHOW$6);
 
-    this._element.setAttribute('aria-expanded', 'false');
+    this._element.setAttribute('aria-expanded-jetstream', 'false');
 
     Manipulator.removeDataAttribute(this._menu, 'popper');
     EventHandler.trigger(this._element, EVENT_HIDDEN$4, relatedTarget);
@@ -12715,7 +12715,7 @@ const SELECTOR_NAV_LINKS = '.nav-link';
 const SELECTOR_NAV_ITEMS = '.nav-item';
 const SELECTOR_LIST_ITEMS = '.list-group-item';
 const SELECTOR_LINK_ITEMS = `${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}, .${CLASS_NAME_DROPDOWN_ITEM}`;
-const SELECTOR_DROPDOWN$1 = '.dropdown';
+const SELECTOR_DROPDOWN$1 = '.dropdown-jetstream';
 const SELECTOR_DROPDOWN_TOGGLE$1 = '.dropdown-toggle';
 const METHOD_OFFSET = 'offset';
 const METHOD_POSITION = 'position';
@@ -12938,7 +12938,7 @@ const CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu';
 const CLASS_NAME_ACTIVE = 'active';
 const CLASS_NAME_FADE$1 = 'fade';
 const CLASS_NAME_SHOW$1 = 'show';
-const SELECTOR_DROPDOWN = '.dropdown';
+const SELECTOR_DROPDOWN = '.dropdown-jetstream';
 const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
 const SELECTOR_ACTIVE = '.active';
 const SELECTOR_ACTIVE_UL = ':scope > li > .active';
@@ -13059,7 +13059,7 @@ class Tab extends BaseComponent {
         SelectorEngine.find(SELECTOR_DROPDOWN_TOGGLE, dropdownElement).forEach(dropdown => dropdown.classList.add(CLASS_NAME_ACTIVE));
       }
 
-      element.setAttribute('aria-expanded', true);
+      element.setAttribute('aria-expanded-jetstream', true);
     }
 
     if (callback) {

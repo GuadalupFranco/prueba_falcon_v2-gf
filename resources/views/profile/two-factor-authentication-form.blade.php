@@ -16,8 +16,8 @@
             @endif
         </h3>
 
-        <p class="mt-3">
-            {{ __('Cuando la autenticación en dos factores está habiitada, usted deberá iniciar sesión con su contraseña y un token de seguridad. Deberá obtener este token de su celular desde a aplicación de "Autenticador de Google".') }}
+        <p class="mt-3 fs--1">
+            {{ __('Cuando la autenticación en dos factores está habilitada, usted deberá iniciar sesión con su contraseña y un token de seguridad. Deberá obtener este token de su celular desde a aplicación de "Autenticador de Google".') }}
         </p>
 
         @if ($this->enabled)

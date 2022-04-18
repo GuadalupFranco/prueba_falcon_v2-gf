@@ -3,9 +3,11 @@
 <div {{ $attributes->merge(['class' => 'row']) }}>
     <div class="col-md-4">
         <x-jet-section-title>
-            <x-slot name="title">{{ $title }}</x-slot>
+            <x-slot name="title">
+                {{ $title }}
+            </x-slot>
             <x-slot name="description">
-                <span class="small">
+                <span class="fs--0">
                     {{ $description }}
                 </span>
             </x-slot>

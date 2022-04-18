@@ -1,8 +1,4 @@
 <x-jet-form-section submit="">
-    <x-slot>
-        <hr>
-        <div class="mt-5"></div>
-    </x-slot>
     <x-slot name="title">
         {{ __('Seleccionar tema') }}
     </x-slot>
