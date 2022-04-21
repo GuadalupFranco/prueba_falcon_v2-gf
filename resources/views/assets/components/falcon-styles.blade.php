@@ -37,21 +37,5 @@
 <link href="/assets/css/theme.css" rel="stylesheet" id="style-default">
 <link href="/assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl" disabled="true">
 <link href="/assets/css/user.min.css" rel="stylesheet" id="user-style-default">
-<link rel="stylesheet" href="/vendors/fontawesome/all.min.css">
-
-<script>
-    var isRTL = JSON.parse(localStorage.getItem('isRTL'));
-    if (isRTL) {
-        var linkDefault = document.getElementById('style-default');
-        var userLinkDefault = document.getElementById('user-style-default');
-        linkDefault.setAttribute('disabled', true);
-        userLinkDefault.setAttribute('disabled', true);
-        document.querySelector('html').setAttribute('dir', 'rtl');
-    } else {
-        var linkRTL = document.getElementById('style-rtl');
-        var userLinkRTL = document.getElementById('user-style-rtl');
-        linkRTL.setAttribute('disabled', true);
-        userLinkRTL.setAttribute('disabled', true);
-    }
-</script>
+{{-- <link rel="stylesheet" href="/vendors/fontawesome/all.min.css">  Preguntarle a Pechir --}}
 @yield('extra-styles')
