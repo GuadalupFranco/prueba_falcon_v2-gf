@@ -38,8 +38,7 @@ $navs = [
                                     href="#pagination-with-numbering" style="padding-left: 0.375em;"></a></h5>
                         </div>
                     </div>
-                </div>
-                <!--<div class="col-12 ms-auto">
+                    <!--<div class="col-12 ms-auto">
                         <button class="btn btn-info m-auto float-end" type="button">
                         <span class="fas fa-file text-white fs-2 me-2"></span>
                         Nuevo
@@ -229,5 +228,4 @@ $navs = [
         </div>
     </div>
 </div>
-
 @endsection
