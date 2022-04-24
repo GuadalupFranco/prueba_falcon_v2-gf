@@ -37,5 +37,5 @@
 <link href="/assets/css/theme.css" rel="stylesheet" id="style-default">
 <link href="/assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl" disabled="true">
 <link href="/assets/css/user.min.css" rel="stylesheet" id="user-style-default">
-{{-- <link rel="stylesheet" href="/vendors/fontawesome/all.min.css">  Preguntarle a Pechir --}}
+{{-- <link rel="stylesheet" href="/vendors/fontawesome/all.min.css">  Preguntarle a Pechir -
 @yield('extra-styles')

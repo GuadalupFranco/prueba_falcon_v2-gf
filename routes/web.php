@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiciosEscolares\{ControlFichas\ControlFichasController, Prospectos\Prospectos, Agenda\AgendaController, PanelPrincipal\PanelPrincipalController, GruposInduccion\GruposInduccionController};
 use App\Http\Controllers\Vinculacion\{PanelPrincipal\PanelVinculacionController, AgendaPromocional\AgendaPromocionalController, VisitaGuiada\VisitaGuiadaController, Preregistro\PreregistroController};
+use App\Http\Controllers\Administrador\RolesPermisos;
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('panel-principal');
@@ -11,6 +12,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+/* Rutas de Administrador */
+Route::resource('administrador-roles', RolesPermisos\RoleController::class)->middleware('auth');
 
 /* Rutas de Servicios escolares */
 Route::resource('ControlFichas', ControlFichasController::class)->middleware('auth');
