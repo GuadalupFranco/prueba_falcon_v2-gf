@@ -14,6 +14,7 @@
       <div class="content">
         @include('assets.components.header')
         <main>
+          @include('assets.components.mensajes')
           @yield('content')
         </main>
         @include('assets.components.footer')

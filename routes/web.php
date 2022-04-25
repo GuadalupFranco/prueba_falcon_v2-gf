@@ -15,6 +15,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 /* Rutas de Administrador */
 Route::resource('administrador-roles', RolesPermisos\RoleController::class)->middleware('auth');
+Route::post('/obtenerDatosRoles', [RolesPermisos\RoleController::class, 'fetchExample'])->name('dataroles.obtenerdatos');
 
 /* Rutas de Servicios escolares */
 Route::resource('ControlFichas', ControlFichasController::class)->middleware('auth');

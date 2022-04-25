@@ -9,11 +9,6 @@ use Spatie\Permission\Models\Permission;
 
 class RoleSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run(){
 
         // Roles por defecto
@@ -21,7 +16,9 @@ class RoleSeeder extends Seeder
         $roleEstudiante = Role::create(['name' => 'Estudiante']);
 
         // Permisos por defecto
-        Permission::create(['name' => 'tablaperiodica.update']);
-        Permission::create(['name' => 'tablaperiodica.edit']);
+        Permission::create(['name' => 'administrador-roles.index', 'description' => 'Roles - Vista inicial'])->syncRoles([$roleAdmin]);
+        Permission::create(['name' => 'administrador-roles.create', 'description' => 'Roles - Crear rol'])->syncRoles([$roleAdmin]);
+        Permission::create(['name' => 'administrador-roles.edit', 'description' => 'Roles - Modificar rol'])->syncRoles([$roleAdmin]);
+        Permission::create(['name' => 'administrador-roles.destroy', 'description' => 'Roles - Eliminar rol'])->syncRoles([$roleAdmin]);
     }
 }
