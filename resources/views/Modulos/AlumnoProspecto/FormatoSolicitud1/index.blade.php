@@ -271,15 +271,15 @@
                                           <div class="container" style="overflow-x:auto;">
                                               <table
                                                   class="table table-dashboard mb-0 table-borderless fs--1 border-200"">
-                        <thead class=" bg-light">
-                                                  <tr class="text-900">
-                                                      <th>#</th>
-                                                      <th class="">Clave CCT</th>
-                                                      <th class="">Nombre de la escuela</th>
-                                                      <th class="">Dirección</th>
-                                                      <th class="">Código postal</th>
-                                                  </tr>
-                                                  </thead>
+                                                    <thead class=" bg-light">
+                                                        <tr class="text-900">
+                                                            <th>#</th>
+                                                            <th class="">Clave CCT</th>
+                                                            <th class="">Nombre de la escuela</th>
+                                                            <th class="">Dirección</th>
+                                                            <th class="">Código postal</th>
+                                                        </tr>
+                                                    </thead>
                                                   <tbody>
                                                       <tr class="border-bottom border-200">
                                                           <td>
