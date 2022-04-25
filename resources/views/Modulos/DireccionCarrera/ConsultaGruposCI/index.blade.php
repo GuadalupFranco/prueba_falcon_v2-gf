@@ -2,8 +2,26 @@
 
 @section('content')
 
-<div class="card mb-3"  
-    data-list="{&quot;valueNames&quot;:[&quot;grupo&quot;,&quot;aula&quot;,&quot;aspirantes&quot;,
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menú"
+    ],
+    [
+        "link" => "PanelDireccionCarrera.index",
+        "name" => "Dirección de Carrera"
+    ],
+    [
+        "link" => "ConsultaGruposCI.index",
+        "name" => "Consulta Grupos - Curso Inducción",
+    ]
+]
+@endphp
+
+<x-breadcrumb-head :navs="$navs" />
+
+<div class="card mb-3" data-list="{&quot;valueNames&quot;:[&quot;grupo&quot;,&quot;aula&quot;,&quot;aspirantes&quot;,
                 &quot;desarrolloh&quot;,&quot;ingles&quot;,&quot;matematicas&quot;,
                 &quot;estatus&quot;],&quot;page&quot;:10,&quot;pagination&quot;:true}">
     <div class="card-header">

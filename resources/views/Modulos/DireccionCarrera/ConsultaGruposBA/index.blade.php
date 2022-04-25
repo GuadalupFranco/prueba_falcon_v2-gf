@@ -2,6 +2,26 @@
 
 @section('content')
 
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menú"
+    ],
+    [
+        "link" => "PanelDireccionCarrera.index",
+        "name" => "Dirección de Carrera"
+    ],
+    [
+        "link" => "ConsultaGruposBA.index",
+        "name" => "Consulta Grupos - Bachillerato Avanzado",
+    ]
+]
+@endphp
+
+<x-breadcrumb-head :navs="$navs" />
+
+
 <div class="card mb-3" 
     data-list="{&quot;valueNames&quot;:[&quot;grupo&quot;,&quot;aula&quot;,
                 &quot;estudiantes&quot;,&quot;desarrollo-h&quot;,&quot;fisica-estadistica&quot;,
