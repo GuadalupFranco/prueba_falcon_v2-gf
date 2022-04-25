@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiciosEscolares\{ControlFichas\ControlFichasController, Prospectos\Prospectos, Agenda\AgendaController, PanelPrincipal\PanelPrincipalController, GruposInduccion\GruposInduccionController};
 use App\Http\Controllers\Vinculacion\{PanelPrincipal\PanelVinculacionController, AgendaPromocional\AgendaPromocionalController, VisitaGuiada\VisitaGuiadaController, Preregistro\PreregistroController};
+use App\Http\Controllers\DireccionCarrera\{PanelPrincipal\PanelController, ConsultaGruposCI\ConsultaGruposCIController, AsignaProfesoresCI\AsignaProfesoresCIController, ConsultaGruposBA\ConsultaGruposBAController, AsignaProfesoresBA\AsignaProfesoresBAController};
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('panel-principal');
