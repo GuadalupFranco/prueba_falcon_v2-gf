@@ -64,11 +64,13 @@ $navs = [
                     </div>
                     <div class="modal-footer">
                         <a class="btn btn-falcon-default" href="{{ route('administrador-roles.index') }}">Regresar</a>
-                        <button class="btn btn-success" type="submit">Guardar</button>
+                        <button class="btn btn-outline-success" type="submit">Guardar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<a class="btn" onclick="probarAlert()">Probar Alerta</a>
+@include('Modulos.Administrador.RolesPermisos.Roles.js.index')
 @endsection

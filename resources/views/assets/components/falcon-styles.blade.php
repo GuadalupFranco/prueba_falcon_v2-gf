@@ -38,4 +38,10 @@
 <link href="/assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl" disabled="true">
 <link href="/assets/css/user.min.css" rel="stylesheet" id="user-style-default">
 {{-- <link rel="stylesheet" href="/vendors/fontawesome/all.min.css">  Preguntarle a Pechir --}}
+
+<script src="/assets/sweetalert/index.js"></script>
+
+<div id="estilosSweetAlert"></div>
+
+
 @yield('extra-styles')
