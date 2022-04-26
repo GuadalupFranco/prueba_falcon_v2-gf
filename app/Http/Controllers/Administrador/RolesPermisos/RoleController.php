@@ -52,11 +52,28 @@ class RoleController extends Controller{
     }
 
     public function edit($id){
-        //
+        $role = Role::find($id);
+        $permisos = Permission::all();
+        return view('Modulos.Administrador.RolesPermisos.Roles.edit', compact('role', 'permisos'));
     }
 
     public function update(Request $request, $id){
-        //
+        $role = Role::find($id);
+
+        $request->validate([
+            'name' => 'required'
+        ]);
+
+        $role->update([
+            'name' => $request->name
+        ]); // Se modifica la información del rol
+
+        $role->permissions()->sync($request->permissions); // Se le asignan los permisos al rol
+
+        $roles = Role::all();
+        $permisos = Permission::all();
+
+        return redirect()->route('administrador-roles.index')->with('status', 'Rol modificado con éxito');
     }
 
     public function destroy($pIdRol){

@@ -57,13 +57,13 @@
                                     </td>
                                     <td class="name">
                                         {{--<button onclick="onClick({{ $rol->id }})" class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#administrador-roles-editar">--}}
-                                        <a class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                        <a href="{{ route('administrador-roles.edit', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center">
                                             <span class="far fa-edit text-warning"></span>
                                         </a>
-                                        <a class="btn btn-falcon-danger btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" onclick="probarAlert()">
+                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarRol()">
                                             <span class="far fa-trash-alt text-danger"></span>
                                         </a>
-                                        <form action="{{ route('administrador-roles.destroy', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="formId">
+                                        <form action="{{ route('administrador-roles.destroy', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarRol">
                                             @csrf
                                             @method('DELETE')
                                         </form>

@@ -38,7 +38,7 @@ $navs = [
             <div class="tab-pane preview-tab-pane active" role="tabpanel"
                 aria-labelledby="tab-dom-223cfc4a-eef3-4cc8-9803-fe0bb8c3898b"
                 id="dom-223cfc4a-eef3-4cc8-9803-fe0bb8c3898b">
-                <form action="{{ route('administrador-roles.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('administrador-roles.store') }}" method="POST" enctype="multipart/form-data" id="form-guardarRol">
                     @csrf
                     <div class="p-4 pb-0">
                         <div class="mb-3">
@@ -64,11 +64,12 @@ $navs = [
                     </div>
                     <div class="modal-footer">
                         <a class="btn btn-falcon-default" href="{{ route('administrador-roles.index') }}">Regresar</a>
-                        <button class="btn btn-outline-success" type="submit">Guardar</button>
+                        <a class="btn btn-outline-success" onclick="guardarRol()">Guardar</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+@include('Modulos.Administrador.RolesPermisos.Roles.js.index')
 @endsection
