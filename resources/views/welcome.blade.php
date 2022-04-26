@@ -7,6 +7,7 @@
   <!-- ===============================================-->
   <!--    Main Content-->
   <!-- ===============================================-->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <div class="main" id="top">
     <div class="container" data-layout="container">
       {{--@include('assets.components.top-bar')--}}

@@ -59,10 +59,16 @@ class RoleController extends Controller{
         //
     }
 
-    public function destroy($pId){
-        $role = Role::find($pId);
+    public function destroy($pIdRol){
+        
+        $role = Role::find($pIdRol);
 
         $role->delete();
+
+        /*echo json_encode(array(
+            'mensajecorrecto' => '¡Éxito!',
+            'mensaje' => 'Registro eliminado con éxito'
+        ));*/
 
         return redirect()->route('administrador-roles.index')->with('status', 'Rol eliminado con éxito');
     }

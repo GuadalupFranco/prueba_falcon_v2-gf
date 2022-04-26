@@ -71,6 +71,4 @@ $navs = [
         </div>
     </div>
 </div>
-<a class="btn" onclick="probarAlert()">Probar Alerta</a>
-@include('Modulos.Administrador.RolesPermisos.Roles.js.index')
 @endsection

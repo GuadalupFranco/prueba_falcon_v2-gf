@@ -57,19 +57,16 @@
                                     </td>
                                     <td class="name">
                                         {{--<button onclick="onClick({{ $rol->id }})" class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#administrador-roles-editar">--}}
-                                        <a class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" onclick="onClick({{ $rol->id }})">
+                                        <a class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                                             <span class="far fa-edit text-warning"></span>
                                         </a>
-                                        
-                                            
-                                            <form action="{{ route('administrador-roles.destroy', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <input
-                                                onclick="return confirm('¿Desea eliminar...?')"
-                                                type="submit"
-                                                value={!!'class="far fa-trash-alt text-danger"'!!}>
-                                            </form>
+                                        <a class="btn btn-falcon-danger btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" onclick="probarAlert()">
+                                            <span class="far fa-trash-alt text-danger"></span>
+                                        </a>
+                                        <form action="{{ route('administrador-roles.destroy', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="formId">
+                                            @csrf
+                                            @method('DELETE')
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -97,3 +94,5 @@
         </div>
     </div>
 </div>
+<a class="btn" onclick="probarAlert()">Probar Alerta</a>
+@include('Modulos.Administrador.RolesPermisos.Roles.js.index')
