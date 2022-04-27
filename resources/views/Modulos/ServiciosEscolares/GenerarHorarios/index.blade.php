@@ -1,6 +1,10 @@
 @extends('welcome')
-
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
 @section('content')
+
 
 
 
@@ -19,7 +23,39 @@
             <div class="modal-body p-card">
                 <div class="mb-3"><label class="fs-0" for="eventTitle">Titulo</label><input class="form-control" id="eventTitle" type="text" name="title" required="required">
                 </div>
+
                 
+                <div id="slidecontainer">
+                                        
+                    
+                    https://www.w3schools.com/howto/howto_js_rangeslider.asp
+
+                    <h4>Hora</h4><span>Value:</span> <span id="f" style="font-weight:bold;color:red">21</span>:00
+                    
+                    <p><input type="range" min="1" max="24" value="12" class="slider-color" id="id1"></p>
+                    
+                    <p><input type="range" min="1" max="24" value="12" class="slider-color" id="id2"></p>
+                    
+                    <script>
+                    var slideCol = document.getElementById("id1");
+                    var slideSq = document.getElementById("id2");                   
+                    var y = document.getElementById("f");
+                    y.innerHTML = slideCol.value;
+                    
+                    slideCol.oninput = function() {
+                        y.innerHTML = this.value;
+                    }
+                    
+                    slideSq.oninput = function() {
+                        y.innerHTML = this.value;
+                    }
+                    
+                    slidePic.oninput = function() {
+                        y.innerHTML = this.value;
+                    }
+                    </script>
+                    
+                    </div>
 
                 <div class="mb-3"><label class="fs-0" for="eventStartDate">Fecha Inicio</label><input class="form-control datetimepicker" id="eventStartDate" type="date" required="required" name="startDate" placeholder="yyyy/mm/dd hh:mm" data-options="{&quot;static&quot;:&quot;true&quot;,&quot;enableTime&quot;:&quot;true&quot;,&quot;dateFormat&quot;:&quot;Y-m-d H:i&quot;}">
                 </div>
@@ -50,8 +86,7 @@
 
 
 
-            
-
+       
 
 
 
