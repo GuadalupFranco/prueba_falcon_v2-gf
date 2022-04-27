@@ -59,8 +59,10 @@
                             </a>
                             <!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="dashboard/crm.html" aria-expanded="false">
-                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">CRM</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('administrador-usuarios.index') }}" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">Usuarios</span>
                                 </div>
                             </a>
                             <!-- more inner pages-->

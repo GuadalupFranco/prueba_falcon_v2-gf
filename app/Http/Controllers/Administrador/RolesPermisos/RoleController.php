@@ -82,11 +82,6 @@ class RoleController extends Controller{
 
         $role->delete();
 
-        /*echo json_encode(array(
-            'mensajecorrecto' => '¡Éxito!',
-            'mensaje' => 'Registro eliminado con éxito'
-        ));*/
-
         return redirect()->route('administrador-roles.index')->with('status', 'Rol eliminado con éxito');
     }
 }

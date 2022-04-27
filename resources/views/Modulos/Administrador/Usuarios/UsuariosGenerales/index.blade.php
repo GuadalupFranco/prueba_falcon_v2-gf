@@ -3,13 +3,13 @@
         <div class="card-header">
             <div class="row flex-between-end">
                 <div class="col-auto align-self-center">
-                    <h5 class="mb-0" data-anchor="data-anchor" id="pagination-with-numbering">Roles</h5>
+                    <h5 class="mb-0" data-anchor="data-anchor" id="pagination-with-numbering">Usuarios</h5>
                 </div>
             </div>
             <div class="col-12 ms-auto">
-                <a class="btn btn-falcon-info btn-sm m-auto float-end text-uppercase" href="{{ route('administrador-roles.create') }}">
+                <a class="btn btn-falcon-info btn-sm m-auto float-end text-uppercase" href="{{ route('administrador-usuarios.create') }}">
                     <span class="fas fa-file fs-1 me-2"></span>
-                    Nuevo rol
+                    Nuevo usuario
                 </a>
             </div>
         </div>
@@ -24,46 +24,24 @@
                             <thead class="bg-200 text-900">
                                 <tr>
                                     <th class="sort" data-sort="id">ID</th>
-                                    <th class="sort" data-sort="name">Rol</th>
-                                    <th width="300px">Permisos</th>
+                                    <th class="sort" data-sort="name">Nombre</th>
                                     <th data-sort="age" width="125px">Procesos</th>
                                 </tr>
                             </thead>
                             <tbody class="list">
-                                @foreach($roles as $rol)
-                                @php($contadorRoles = 0)
+                                @foreach($users as $user)
                                 <tr>
-                                    <td class="id">{{ $rol->id }}</td>
-                                    <td class="name">{{ $rol->name }}</td>
-                                    <td>
-                                        <p>
-                                            <a class="btn btn-falcon-info btn-sm mt-2 fs-md--1 fs-sm--2" data-bs-toggle="collapse" href="#collapseExample{{$rol->id}}" role="button" aria-expanded="false" aria-controls="collapseExample">Mostrar</a>
-                                        </p>
-                                        <div class="collapse" id="collapseExample{{$rol->id}}">
-                                            <div class="rounded">
-                                                <ul>
-                                                    @foreach($permisos as $permiso)
-                                                        @if($rol->hasPermissionTo($permiso->id))
-                                                            @php($contadorRoles++)
-                                                            <li class="font-md-0 font-sm--2">{{ $permiso->description }}</li>
-                                                        @endif
-                                                    @endforeach
-                                                    @if($contadorRoles==0)
-                                                        <p class="text-danger">El rol no tiene permisos asignados</p>
-                                                    @endif
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
+                                    <td class="id">{{ $user->id }}</td>
+                                    <td class="name">{{ $user->name }}</td>
                                     <td class="name">
-                                        {{--<button onclick="onClick({{ $rol->id }})" class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#administrador-roles-editar">--}}
-                                        <a href="{{ route('administrador-roles.edit', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center">
+                                        <a href="{{ route('administrador-roles.edit', $user->id) }}" class="btn btn-falcon-danger btn-sm float-center">
                                             <span class="far fa-edit text-warning"></span>
                                         </a>
-                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarRol()">
+                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarUsuario()">
                                             <span class="far fa-trash-alt text-danger"></span>
                                         </a>
-                                        <form action="{{ route('administrador-roles.destroy', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarRol">
+                                        <form action="{{ route('administrador-usuarios.destroy', $user->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarUsuario">
+                                            <input type="text" name="idUser" value="{{ $user->id }}">
                                             @csrf
                                             @method('DELETE')
                                         </form>
@@ -94,5 +72,4 @@
         </div>
     </div>
 </div>
-<a class="btn" onclick="probarAlert()">Probar Alerta</a>
-@include('Modulos.Administrador.RolesPermisos.Roles.js.index')
+@include('Modulos.Administrador.Usuarios.UsuariosGenerales.js.index')
