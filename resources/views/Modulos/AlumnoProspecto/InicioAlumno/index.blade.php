@@ -32,7 +32,7 @@
                         <div class="carousel-inner rounded-1 light">
                         <div class="carousel-inner">
 
-                            <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="carousel-item active" data-bs-interval="5000">
                                 <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/2.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item" data-bs-interval="10000">
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/3.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
@@ -69,7 +69,7 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item" data-bs-interval="10000">
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/4.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
@@ -87,12 +87,12 @@
                             </div>
 
 
-                            <div class="carousel-item" data-bs-interval="10000">
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/3.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
                                         <h6 class="text-white">
-                                            Estimado ANDRES JAVIER CAMACHO:
+                                            Estimado ANDRES JAVIER CAMACHO LEDEZMA:
                                         </h6>
                                         <p class="text-white">Si estás interesado en participar en el proceso de asignación de EXENCIÓN DE PAGO POR EXCELENCIA MAYO - AGOSTO 2022, 
                                             ya puedes consultar la convocatoria en la siguiente liga:</p>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="card-img-overlay d-flex align-items-center">
                                 <div class="text-center" style="width: 100%">
-                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Ver Calendario</a>
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/Calendario_SD2021.pdf?r=224">Ver Calendario</a>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                             </div>
                             <div class="card-img-overlay d-flex align-items-center">
                                 <div class="text-center" style="width: 100%">
-                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Catálogo de Cuotas</a>
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/N_CatalogoCostos2022.pdf?r=108">Catálogo de Cuotas</a>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +246,7 @@
                             </div>
                             <div class="card-img-overlay d-flex align-items-center">
                                 <div class="text-center" style="width: 100%">
-                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Trámite de Seguro Facultativo</a>
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/seguro_facultativo.pdf?r=445">Trámite de Seguro Facultativo</a>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +283,7 @@
                             </div>
                             <div class="card-img-overlay d-flex align-items-center">
                                 <div class="text-center" style="width: 100%">
-                                    <a class="btn btn-falcon-primary me-1 mb-1" href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Fsistemaintegral.upq.edu.mx%2Fuploads%2Fdocumentos%2FN_ReglamentoBiblioteca.pdf&clen=713072&chunk=true">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/N_ReglamentoBiblioteca.pdf">
                                         Lineamientos Biblioteca UPQ
                                     </a>
                                 </div>

@@ -49,7 +49,9 @@ Route::get('/InicioAlumno', function () {
 Route::get('/ValidarDocumentos', function () {
     return view('Modulos.ServiciosEscolares.ValidarDocumentos.index');
 });
-
+Route::get('/GenerarHorarios', function () {
+    return view('Modulos.ServiciosEscolares.GenerarHorarios.index');
+});
 // fin rutas javier-camacho
 
 // Rutas Branch isay-guerra
