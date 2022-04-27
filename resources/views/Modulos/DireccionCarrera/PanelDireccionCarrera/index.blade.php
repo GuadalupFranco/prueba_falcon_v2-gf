@@ -2,6 +2,22 @@
 
 @section('content')
 
+
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menú"
+    ],
+    [
+        "link" => "PanelDireccionCarrera.index",
+        "name" => "Dirección de Carrera"
+    ],
+]
+@endphp
+
+<x-breadcrumb-head :navs="$navs" />
+
 <h3 class="text-center my-2 mb-4">Panel principal</h3>
 
 <div class="row">
