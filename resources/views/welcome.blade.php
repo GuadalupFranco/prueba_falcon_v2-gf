@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="chrome windows fontawesome-i2svg-active fontawesome-i2svg-complete">
   <head>
     @include('assets.components.falcon-styles')

@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>    {{-- Para arreglar problemas dentro de la configuracion, eliminar esta linea --}}
 
     @include('assets.components.falcon-styles')
 </head>

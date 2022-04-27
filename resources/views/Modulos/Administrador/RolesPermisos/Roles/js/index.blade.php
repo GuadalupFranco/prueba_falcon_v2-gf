@@ -75,9 +75,8 @@
         }, tiempoEspera)
     }
 
-    function eliminarRol() {
-
-        let form = document.getElementById("form-eliminarRol");
+    function eliminarRol(id) {
+        let form = document.getElementById(`form-eliminarRol-${id}`);
         let tiempoEspera = 2000 // Está en milisegundos
 
         const swalWithBootstrapButtons = Swal.mixin({

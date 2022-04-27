@@ -76,12 +76,10 @@ class RoleController extends Controller{
         return redirect()->route('administrador-roles.index')->with('status', 'Rol modificado con éxito');
     }
 
-    public function destroy($pIdRol){
-        
-        $role = Role::find($pIdRol);
 
-        $role->delete();
-
+    // * Cambiar parametro en cuanto se actualizen las rutas
+    public function destroy(Role $administrador_role){
+        $administrador_role->delete();
         return redirect()->route('administrador-roles.index')->with('status', 'Rol eliminado con éxito');
     }
 }

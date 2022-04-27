@@ -57,13 +57,13 @@
                                     </td>
                                     <td class="name">
                                         {{--<button onclick="onClick({{ $rol->id }})" class="btn btn-falcon-warning btn-sm float-center" type="button" data-bs-toggle="modal" data-bs-target="#administrador-roles-editar">--}}
-                                        <a href="{{ route('administrador-roles.edit', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center">
+                                        <a href="{{ route('administrador-roles.edit', $rol -> id) }}" class="btn btn-falcon-danger btn-sm float-center">
                                             <span class="far fa-edit text-warning"></span>
                                         </a>
-                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarRol()">
+                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarRol({{ $rol -> id }})">
                                             <span class="far fa-trash-alt text-danger"></span>
                                         </a>
-                                        <form action="{{ route('administrador-roles.destroy', $rol->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarRol">
+                                        <form action="{{ route('administrador-roles.destroy', $rol) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarRol-{{ $rol -> id }}">
                                             @csrf
                                             @method('DELETE')
                                         </form>
@@ -94,5 +94,7 @@
         </div>
     </div>
 </div>
-<a class="btn" onclick="probarAlert()">Probar Alerta</a>
-@include('Modulos.Administrador.RolesPermisos.Roles.js.index')
+
+@section('extra-scripts')    
+    @include('Modulos.Administrador.RolesPermisos.Roles.js.index')
+@endsection

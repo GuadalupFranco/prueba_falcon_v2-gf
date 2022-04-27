@@ -84,11 +84,13 @@ Route::get('/capturaCalificacionesBA', function () {
 // Rutas Branch guadalupe-franco
 
 /* RUTAS DE DIRECCIÓN DE CARRERA */
-Route::resource('DCPanelPrincipal', PanelController::class)->middleware('auth');
+/* Route::resource('DCPanelPrincipal', PanelController::class)->middleware('auth');
 Route::resource('ConsultaGruposCI', ConsultaGruposCIController::class)->middleware('auth');
 Route::resource('ConsultaGruposBA', ConsultaGruposBAController::class)->middleware('auth');
 Route::resource('AsignaProfesoresCI', AsignaProfesoresCIController::class)->middleware('auth');
-Route::resource('AsignaProfesoresBA', AsignaProfesoresBAController::class)->middleware('auth');
+Route::resource('AsignaProfesoresBA', AsignaProfesoresBAController::class)->middleware('auth'); */
+
+// ! Recordar descomentar esto
 
 // Fin rutas guadalupe-franco
 
