@@ -53,7 +53,8 @@ class RoleController extends Controller{
 
     public function edit(Role $administrador_role){
         $permisos = Permission::all();
-        return view('Modulos.Administrador.RolesPermisos.Roles.edit', compact('administrador_role', 'permisos'));
+        $role = $administrador_role;      //? Modificar esto cuando se cambien los nombres de las rutas
+        return view('Modulos.Administrador.RolesPermisos.Roles.edit', compact('role', 'permisos'));
     }
 
     public function update(Request $request, $id){

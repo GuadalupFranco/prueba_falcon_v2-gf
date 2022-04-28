@@ -18,7 +18,7 @@ $navs = [
 ],
 [
 "link" => "#",
-"name" => "Crear rol",
+"name" => "Crear permiso",
 ]
 ]
 @endphp

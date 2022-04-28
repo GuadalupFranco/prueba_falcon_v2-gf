@@ -38,9 +38,9 @@
     }
 
 
-    function modificarRol() {
+    function modificar() {
 
-        let form = document.getElementById("form-modificarRol");
+        let form = document.getElementById("form-modificar");
         let tiempoEspera = 2000 // Está en milisegundos
         let timerInterval = 0
 

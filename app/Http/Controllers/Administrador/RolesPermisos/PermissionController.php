@@ -36,12 +36,24 @@ class PermissionController extends Controller{
         //
     }
 
-    public function edit($id){
-        //
+    public function edit(Permission $administrador_permiso){
+        $permiso = $administrador_permiso;
+        return view('Modulos.Administrador.RolesPermisos.Permisos.edit', compact('permiso'));
     }
 
-    public function update(Request $request, $id){
-        //
+    public function update(Request $request, Permission $administrador_permiso){
+        $request -> validate([
+            'name' => 'required',
+            'description' => 'required|min:8'
+        ]);
+        
+        $permiso = $administrador_permiso;
+
+        $permiso -> name = $request -> get('name');
+        $permiso -> description = $request -> get('description');
+        
+        return redirect()->route('administrador-roles.index')->with('status', 'Permiso modificado con éxito');
+
     }
 
     public function destroy(Permission $administrador_permiso){
