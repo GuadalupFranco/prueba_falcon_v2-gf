@@ -29,7 +29,7 @@ $navs = [
     <div class="card-header">
         <div class="row flex-between-end">
             <div class="col-auto align-self-center">
-                <h5 class="mb-0">Crear rol</h5>
+                <h5 class="mb-0">Crear Permiso</h5>
             </div>
         </div>
     </div>
@@ -38,28 +38,16 @@ $navs = [
             <div class="tab-pane preview-tab-pane active" role="tabpanel"
                 aria-labelledby="tab-dom-223cfc4a-eef3-4cc8-9803-fe0bb8c3898b"
                 id="dom-223cfc4a-eef3-4cc8-9803-fe0bb8c3898b">
-                <form action="{{ route('administrador-roles.store') }}" method="POST" enctype="multipart/form-data" id="form-guardar">
+                <form action="{{ route('administrador-permisos.store') }}" method="POST" enctype="multipart/form-data" id="form-guardar">
                     @csrf
                     <div class="p-4 pb-0">
                         <div class="mb-3">
-                            <label class="form-label" for="basic-form-name">Nombre del rol</label>
+                            <label class="form-label" for="basic-form-name">Nombre del permiso</label>
                             <input class="form-control" type="text" name="name" placeholder="Nombre" />
                         </div>
                         <div class="mb-3">
-                            <div class="row">
-                                <div class="form-group col-sm-12">
-                                    <h2 class="h5">Seleccionar permisos</h2>
-                                    <hr>
-                                    @foreach ($permisos as $permiso)
-                                    <div class="form-check">
-                                        <input class="form-check-input" id="permiso-{{ $permiso -> id }}" type="checkbox"
-                                            value="{{ $permiso->id }}" name="permissions[]" />
-                                        <label class="form-check-label mb-0"
-                                            for="permiso-{{ $permiso -> id }}">{{$permiso->description}}</label>
-                                    </div>
-                                    @endforeach
-                                </div>
-                            </div>
+                            <label class="form-label" for="basic-form-name">Descripción del permiso</label>
+                            <input class="form-control" type="text" name="description" placeholder="Descripción" />
                         </div>
                     </div>
                     <div class="modal-footer">

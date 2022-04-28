@@ -8,7 +8,7 @@
 
 <h2>Cursos de Inducción | Asignar Materias</h2>
 
-<x-table-card order='data-list={"valueNames":["programa","estatus"]}'>
+<x-table-card data='data-list={"valueNames":["programa","estatus"]}'>
   <x-slot name="tableOptions">
     <x-table-card-options :filtrar="true"></x-table-card-options>
   </x-slot>

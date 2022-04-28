@@ -1,8 +1,8 @@
 <script>
 
-    function guardarRol() {
+    function guardar() {
 
-        let form = document.getElementById("form-guardarRol");
+        let form = document.getElementById("form-guardar");
         let tiempoEspera = 2000 // Está en milisegundos
         let timerInterval = 0
 
@@ -75,8 +75,8 @@
         }, tiempoEspera)
     }
 
-    function eliminarRol(id) {
-        let form = document.getElementById(`form-eliminarRol-${id}`);
+    function eliminar(id) {
+        let form = document.getElementById(`form-eliminar-${id}`);
         let tiempoEspera = 2000 // Está en milisegundos
 
         const swalWithBootstrapButtons = Swal.mixin({

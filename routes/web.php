@@ -15,6 +15,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 /* Rutas de Administrador */
 Route::resource('administrador-roles', RolesPermisos\RoleController::class)->middleware('auth');
+Route::resource('administrador-permisos', RolesPermisos\PermissionController::class)->except(['index', 'show']) -> middleware('auth');
 Route::resource('administrador-usuarios', Usuarios\UsuariosController::class)->middleware('auth');
 
 /* Rutas de Servicios escolares */

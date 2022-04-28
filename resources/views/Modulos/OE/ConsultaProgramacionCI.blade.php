@@ -19,7 +19,7 @@
 
 <x-tabs :navs="$navs"></x-tabs>
 
-<x-table-card order='data-list={"valueNames":["grupo","aula","horario","alumnado"]}' :align="true">
+<x-table-card data='data-list={"valueNames":["grupo","aula","horario","alumnado"]}' :align="true">
     <x-slot name="tableOptions">
         <x-table-card-options :filtrar="true" :exportar="true"></x-table-card-options>
     </x-slot>

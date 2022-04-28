@@ -45,7 +45,7 @@ $navs = [
 
     {{-- Contenido de permisos --}}
     <div class="tab-pane fade" id="tab-profile" role="tabpanel" aria-labelledby="profile-tab">
-        @include('Modulos.Administrador.RolesPermisos.Permisos.index', compact('permisos'))
+        @include('Modulos.Administrador.RolesPermisos.Permisos.index')
     </div>
 </div>
 @endsection

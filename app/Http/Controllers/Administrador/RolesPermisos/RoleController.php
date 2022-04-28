@@ -10,9 +10,9 @@ use Spatie\Permission\Models\Permission;
 class RoleController extends Controller{
 
     public function index(){
-        $roles = Role::all();
+        $roles = Role::with('permissions') -> get();
         $permisos = Permission::all();
-        return view('Modulos.Administrador.RolesPermisos.index', compact('roles', 'permisos'));
+        return view('Modulos.Administrador.RolesPermisos.index', compact('roles', 'permisos'));  /* Mover Permisos a una pagina por separado?? */
     }
 
     public function create(){
@@ -51,10 +51,9 @@ class RoleController extends Controller{
         //
     }
 
-    public function edit($id){
-        $role = Role::find($id);
+    public function edit(Role $administrador_role){
         $permisos = Permission::all();
-        return view('Modulos.Administrador.RolesPermisos.Roles.edit', compact('role', 'permisos'));
+        return view('Modulos.Administrador.RolesPermisos.Roles.edit', compact('administrador_role', 'permisos'));
     }
 
     public function update(Request $request, $id){
