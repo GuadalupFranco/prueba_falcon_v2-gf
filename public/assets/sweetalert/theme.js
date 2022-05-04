@@ -1,6 +1,12 @@
 const cambiarModo = document.getElementById("themeControlToggle");
-const contenedorEstilosSweetAlert =
-    document.getElementById("estilosSweetAlert");
+
+const head = document.getElementsByTagName("head")[0];
+
+const contenedorEstilosSweetAlert = document.createElement("link");
+head.append(contenedorEstilosSweetAlert);
+
+contenedorEstilosSweetAlert.rel = "stylesheet";
+
 let themeMode = localStorage.getItem("theme");
 
 cambiarModo.addEventListener("click", function () {
@@ -10,7 +16,7 @@ cambiarModo.addEventListener("click", function () {
 });
 
 function cambiarEstilos(themeMode) {
-    contenedorEstilosSweetAlert.innerHTML = `<link rel="stylesheet" href="/assets/sweetalert/sweetalert-${themeMode}.css">`;
+    contenedorEstilosSweetAlert.href = `/assets/sweetalert/sweetalert-${themeMode}.css`;
 }
 
 cambiarEstilos(themeMode);

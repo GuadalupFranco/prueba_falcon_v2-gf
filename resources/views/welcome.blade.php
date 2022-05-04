@@ -2,13 +2,13 @@
 <html lang="en-US" dir="ltr" class="chrome windows fontawesome-i2svg-active fontawesome-i2svg-complete">
   <head>
     @include('assets.components.falcon-styles')
+    @laravelPWA
   </head>
 
 <body>
   <!-- ===============================================-->
   <!--    Main Content-->
   <!-- ===============================================-->
-  <meta name="csrf-token" content="{{ csrf_token() }}">
   <div class="main" id="top">
     <div class="container" data-layout="container">
       {{--@include('assets.components.top-bar')--}}
