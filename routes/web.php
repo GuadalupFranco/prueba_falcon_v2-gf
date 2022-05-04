@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ServiciosEscolares\{ControlFichas\ControlFichasController, Prospectos\Prospectos, Agenda\AgendaController, PanelPrincipal\PanelPrincipalController, GruposInduccion\GruposInduccionController};
+use App\Http\Controllers\ServiciosEscolares\{ControlFichas\ControlFichasController, Prospectos\Prospectos, Agenda\AgendaController, PanelPrincipal\PanelPrincipalController, GruposInduccion\GruposInduccionController, ValidarDocumentos\ValidarDocumentosController, GenerarHorarios\GenerarHorariosController};
 use App\Http\Controllers\Vinculacion\{PanelPrincipal\PanelVinculacionController, AgendaPromocional\AgendaPromocionalController, VisitaGuiada\VisitaGuiadaController, Preregistro\PreregistroController};
+use App\Http\Controllers\AlumnoProspecto\{InicioAlumno\InicioAlumnoController, FormatoSolicitud1\FormatoSolicitud1Controller, PanelProspecto\PanelProspectoController, AccesoProspecto\AccesoProspectoController};
 use App\Http\Controllers\Administrador\{RolesPermisos, Usuarios};
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
@@ -35,28 +36,19 @@ Route::resource('VisitaGuiada', VisitaGuiadaController::class)->middleware('auth
 Route::resource('Preregistro', PreregistroController::class)->middleware('auth');
 
 // Rutas Branch javier-camacho
-Route::get('/FormatoSolicitud1', function () {
-    return view('Modulos.AlumnoProspecto.FormatoSolicitud1.index');
-});
 
-Route::get('/PanelProspecto', function () {
-    return view('Modulos.AlumnoProspecto.PanelProspecto.index');
-});
+    /*Rutas AlumnoProspecto*/ 
+        Route::resource('InicioAlumno', InicioAlumnoController::class)->middleware('auth');
+        Route::resource('FormatoSolicitud1', FormatoSolicitud1Controller::class)->middleware('auth');
+        Route::resource('PanelProspecto', PanelProspectoController::class)->middleware('auth');
+        Route::resource('AccesoProspecto', AccesoProspectoController::class);
+    /*Fin Rutas Servicios Escolares*/
 
-Route::get('/AccesoProspecto', function () {
-    return view('Modulos.AlumnoProspecto.AccesoProspecto.index');
-});
-
-Route::get('/InicioAlumno', function () {
-    return view('Modulos.AlumnoProspecto.InicioAlumno.index');
-});
-
-Route::get('/ValidarDocumentos', function () {
-    return view('Modulos.ServiciosEscolares.ValidarDocumentos.index');
-});
-Route::get('/GenerarHorarios', function () {
-    return view('Modulos.ServiciosEscolares.GenerarHorarios.index');
-});
+    /*Rutas Servicios Escolares*/
+        Route::resource('ValidarDocumentos', ValidarDocumentosController::class)->middleware('auth');
+        Route::resource('GenerarHorarios', GenerarHorariosController::class)->middleware('auth');
+    /*Fin Rutas Servicios Escolares*/
+    
 // fin rutas javier-camacho
 
 // Rutas Branch isay-guerra

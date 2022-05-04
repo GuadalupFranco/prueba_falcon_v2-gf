@@ -4503,7 +4503,7 @@ function isBooleanAttr(attrName) {
   return booleanAttributes.includes(attrName);
 }
 function attributeShouldntBePreservedIfFalsy(name) {
-  return !["aria-pressed", "aria-checked", "aria-expanded-jetstream", "aria-selected"].includes(name);
+  return !["aria-pressed", "aria-checked", "aria-expanded", "aria-selected"].includes(name);
 }
 function getBinding(el, name, fallback) {
   if (el._x_bindings && el._x_bindings[name] !== void 0)
@@ -9961,8 +9961,8 @@ defineJQueryPlugin(Carousel);
  * ------------------------------------------------------------------------
  */
 
-const NAME$a = 'collapse-jetstream';
-const DATA_KEY$9 = 'bs.collapse-jetstream';
+const NAME$a = 'collapse';
+const DATA_KEY$9 = 'bs.collapse';
 const EVENT_KEY$9 = `.${DATA_KEY$9}`;
 const DATA_API_KEY$5 = '.data-api';
 const Default$9 = {
@@ -9979,15 +9979,15 @@ const EVENT_HIDE$5 = `hide${EVENT_KEY$9}`;
 const EVENT_HIDDEN$5 = `hidden${EVENT_KEY$9}`;
 const EVENT_CLICK_DATA_API$4 = `click${EVENT_KEY$9}${DATA_API_KEY$5}`;
 const CLASS_NAME_SHOW$7 = 'show';
-const CLASS_NAME_COLLAPSE = 'collapse-jetstream';
-const CLASS_NAME_COLLAPSING = 'collapsing-jetstream';
-const CLASS_NAME_COLLAPSED = 'collapsed-jetstream';
+const CLASS_NAME_COLLAPSE = 'collapse';
+const CLASS_NAME_COLLAPSING = 'collapsing';
+const CLASS_NAME_COLLAPSED = 'collapsed';
 const CLASS_NAME_DEEPER_CHILDREN = `:scope .${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`;
-const CLASS_NAME_HORIZONTAL = 'collapse-horizontal-jetstream';
+const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
 const WIDTH = 'width';
 const HEIGHT = 'height';
-const SELECTOR_ACTIVES = '.collapse-jetstream.show, .collapse.collapsing-jetstream';
-const SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="collapse-jetstream"]';
+const SELECTOR_ACTIVES = '.collapse.show, .collapse.collapsing';
+const SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="collapse"]';
 /**
  * ------------------------------------------------------------------------
  * Class Definition
@@ -10212,7 +10212,7 @@ class Collapse extends BaseComponent {
         elem.classList.add(CLASS_NAME_COLLAPSED);
       }
 
-      elem.setAttribute('aria-expanded-jetstream', isOpen);
+      elem.setAttribute('aria-expanded', isOpen);
     });
   } // Static
 
@@ -10280,8 +10280,8 @@ defineJQueryPlugin(Collapse);
  * ------------------------------------------------------------------------
  */
 
-const NAME$9 = 'dropdown-jetstream';
-const DATA_KEY$8 = 'bs.dropdown-jetstream';
+const NAME$9 = 'dropdown';
+const DATA_KEY$8 = 'bs.dropdown';
 const EVENT_KEY$8 = `.${DATA_KEY$8}`;
 const DATA_API_KEY$4 = '.data-api';
 const ESCAPE_KEY$2 = 'Escape';
@@ -10304,7 +10304,7 @@ const CLASS_NAME_DROPUP = 'dropup';
 const CLASS_NAME_DROPEND = 'dropend';
 const CLASS_NAME_DROPSTART = 'dropstart';
 const CLASS_NAME_NAVBAR = 'navbar';
-const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown-jetstream"]';
+const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]';
 const SELECTOR_MENU = '.dropdown-menu';
 const SELECTOR_NAVBAR_NAV = '.navbar-nav';
 const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
@@ -10395,7 +10395,7 @@ class Dropdown extends BaseComponent {
 
     this._element.focus();
 
-    this._element.setAttribute('aria-expanded-jetstream', true);
+    this._element.setAttribute('aria-expanded', true);
 
     this._menu.classList.add(CLASS_NAME_SHOW$6);
 
@@ -10454,7 +10454,7 @@ class Dropdown extends BaseComponent {
 
     this._element.classList.remove(CLASS_NAME_SHOW$6);
 
-    this._element.setAttribute('aria-expanded-jetstream', 'false');
+    this._element.setAttribute('aria-expanded', 'false');
 
     Manipulator.removeDataAttribute(this._menu, 'popper');
     EventHandler.trigger(this._element, EVENT_HIDDEN$4, relatedTarget);
@@ -12715,7 +12715,7 @@ const SELECTOR_NAV_LINKS = '.nav-link';
 const SELECTOR_NAV_ITEMS = '.nav-item';
 const SELECTOR_LIST_ITEMS = '.list-group-item';
 const SELECTOR_LINK_ITEMS = `${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}, .${CLASS_NAME_DROPDOWN_ITEM}`;
-const SELECTOR_DROPDOWN$1 = '.dropdown-jetstream';
+const SELECTOR_DROPDOWN$1 = '.dropdown';
 const SELECTOR_DROPDOWN_TOGGLE$1 = '.dropdown-toggle';
 const METHOD_OFFSET = 'offset';
 const METHOD_POSITION = 'position';
@@ -12938,7 +12938,7 @@ const CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu';
 const CLASS_NAME_ACTIVE = 'active';
 const CLASS_NAME_FADE$1 = 'fade';
 const CLASS_NAME_SHOW$1 = 'show';
-const SELECTOR_DROPDOWN = '.dropdown-jetstream';
+const SELECTOR_DROPDOWN = '.dropdown';
 const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
 const SELECTOR_ACTIVE = '.active';
 const SELECTOR_ACTIVE_UL = ':scope > li > .active';
@@ -13059,7 +13059,7 @@ class Tab extends BaseComponent {
         SelectorEngine.find(SELECTOR_DROPDOWN_TOGGLE, dropdownElement).forEach(dropdown => dropdown.classList.add(CLASS_NAME_ACTIVE));
       }
 
-      element.setAttribute('aria-expanded-jetstream', true);
+      element.setAttribute('aria-expanded', true);
     }
 
     if (callback) {

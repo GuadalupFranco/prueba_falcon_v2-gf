@@ -1,12 +1,7 @@
 @extends('welcome')
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-</head>
+
+
 @section('content')
-
-
-
 
 <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#error-modal">Generar Horario</button>
 
@@ -18,44 +13,33 @@
       <div class="modal-body p-0">
         <form id="addEventForm" autocomplete="off">
             <div class="modal-header px-card bg-light border-bottom-0">
-                <h5 class="modal-title">Crear evento</h5><button class="btn-close me-n1" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title">Generar Horario</h5><button class="btn-close me-n1" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-card">
-                <div class="mb-3"><label class="fs-0" for="eventTitle">Titulo</label><input class="form-control" id="eventTitle" type="text" name="title" required="required">
+                <div class="mb-3">
+                    <label class="fs-0" for="eventTitle">Titulo</label>
+                    <input class="form-control" id="eventTitle" type="text" name="title" required="required">
                 </div>
+
+
+                
+
 
                 
                 <div id="slidecontainer">
-                                        
+                    <label class="form-label" for="customRange2">
+                        <h5>Hora:  <span id="hh" style="font-weight:bold;">21</span>:<span id="mm"></span></h5>
+                    </label>                                       
+                   
+                   
+                    <div class="mx-2 mb-3">
+                        <input class="form-range" type="range"  min="01" max="24" value="12" id="hours"/>
+                        <input class="form-range" type="range"  min="00" max="59" value="00" id="minutes"/>                        
+                    </div> 
+                   
                     
-                    https://www.w3schools.com/howto/howto_js_rangeslider.asp
-
-                    <h4>Hora</h4><span>Value:</span> <span id="f" style="font-weight:bold;color:red">21</span>:00
-                    
-                    <p><input type="range" min="1" max="24" value="12" class="slider-color" id="id1"></p>
-                    
-                    <p><input type="range" min="1" max="24" value="12" class="slider-color" id="id2"></p>
-                    
-                    <script>
-                    var slideCol = document.getElementById("id1");
-                    var slideSq = document.getElementById("id2");                   
-                    var y = document.getElementById("f");
-                    y.innerHTML = slideCol.value;
-                    
-                    slideCol.oninput = function() {
-                        y.innerHTML = this.value;
-                    }
-                    
-                    slideSq.oninput = function() {
-                        y.innerHTML = this.value;
-                    }
-                    
-                    slidePic.oninput = function() {
-                        y.innerHTML = this.value;
-                    }
-                    </script>
-                    
-                    </div>
+                                       
+                </div>
 
                 <div class="mb-3"><label class="fs-0" for="eventStartDate">Fecha Inicio</label><input class="form-control datetimepicker" id="eventStartDate" type="date" required="required" name="startDate" placeholder="yyyy/mm/dd hh:mm" data-options="{&quot;static&quot;:&quot;true&quot;,&quot;enableTime&quot;:&quot;true&quot;,&quot;dateFormat&quot;:&quot;Y-m-d H:i&quot;}">
                 </div>
@@ -73,7 +57,7 @@
                         <option value="primary">Desarrollo Humano</option>
                         <option value="danger">Matemáticas para Ingeniería I</option>
                         <option value="success">Física Para Ingeniería I</option>
-                        <option value="warning">Programación Orientada a Objetos</option>
+                        <option value="info">Programación Orientada a Objetos</option>
                     </select></div>
             </div>
 
@@ -85,9 +69,42 @@
 </div>
 
 
-
-       
-
+    @section('extra-scripts')
+        <script>
+            var slideCol = document.getElementById("hours");                  
+            var x = document.getElementById("hh");
+            x.innerHTML = slideCol.value;
+            
+            slideCol.oninput = function() {
+                x.innerHTML = this.value;
+            }
+            
+            slideSq.oninput = function() {
+                x.innerHTML = this.value;
+            }
+            
+            slidePic.oninput = function() {
+                x.innerHTML = this.value;
+            }
+        </script>
+        <script>
+                var slideCol = document.getElementById("minutes");                  
+                var y = document.getElementById("mm");
+                y.innerHTML = slideCol.value;
+                
+                slideCol.oninput = function() {
+                    y.innerHTML = this.value;
+                }
+                
+                slideSq.oninput = function() {
+                    y.innerHTML = this.value;
+                }
+                
+                slidePic.oninput = function() {
+                    y.innerHTML = this.value;
+                }
+        </script>
+    @endsection
 
 
 @endsection
