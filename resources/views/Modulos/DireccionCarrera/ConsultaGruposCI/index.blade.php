@@ -46,16 +46,16 @@ $navs = [
     <div class="card-body p-0">
         <div class="table-responsive scrollbar">
             <table class="table table-sm table-striped fs--1 mb-0 overflow-hidden">
-                <thead class="bg-200 text-900">
+                <thead class="bg-200">
                     <tr>
                         <th class="sort white-space-nowrap pe-4" data-sort="grupo">Grupo</th>
                         <th class="sort white-space-nowrap pe-5" data-sort="aula">Aula</th>
-                        <th class="sort white-space-nowrap pe-4" data-sort="aspirantes">Aspirantes</th>
+                        <th class="sort white-space-nowrap pe-3" data-sort="aspirantes">Aspirantes</th>
                         <th class="sort white-space-nowrap pe-5" data-sort="desarrolloh">Desarrollo Humano</th>
                         <th class="sort white-space-nowrap pe-8" data-sort="ingles">Inglés</th>
-                        <th class="sort white-space-nowrap pe-7" data-sort="matematicas">Matemáticas</th>
-                        <th class="sort white-space-nowrap pe-6" data-sort="estatus">Estatus</th>
-                        <th class="sort ps-3 text-center align-middle pe-3">...</th>
+                        <th class="sort white-space-nowrap pe-6" data-sort="matematicas">Matemáticas</th>
+                        <th class="sort white-space-nowrap pe-3" data-sort="estatus">Estatus</th>
+                        <th class="sort px-4 white-space-nowrap aling-middle">...</th>
                     </tr>
                 </thead>
                 <tbody class="list">
@@ -63,7 +63,7 @@ $navs = [
                         <td class="py-2 align-middle"><strong>S172</strong></td>
                         <td class="py-2 align-middle">C206</td>
                         <td class="py-2 align-middle">30</td>
-                        <td class="py-2 align-middle">Jose Rodríguez Pedronche eeee</td>
+                        <td class="py-2 align-middle">Jose Rodríguez Pedro</td>
                         <td class="py-2 align-middle">Marta Jiménez Sánchez Mora</td>
                         <td class="py-2 align-middle">Rebeca García</td>
                         <td class="py-2 align-middle text-center fs-0 white-space-nowrap">
@@ -71,7 +71,7 @@ $navs = [
                                 <span class="ms-1 fas fa-check"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle text-center">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -87,7 +87,7 @@ $navs = [
                                 <span class="ms-1 fas fa-stream"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle text-center">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -103,7 +103,7 @@ $navs = [
                                 <span class="ms-1 fas fa-stream"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle text-center">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -119,7 +119,7 @@ $navs = [
                                 <span class="ms-1 fas fa-ban"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle text-center">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -135,7 +135,7 @@ $navs = [
                                 <span class="ms-1 fas fa-ban"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle text-center">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -151,7 +151,7 @@ $navs = [
                                 <span class="ms-1 fas fa-exclamation"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle text-center">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
