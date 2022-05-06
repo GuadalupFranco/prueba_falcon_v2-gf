@@ -3,14 +3,23 @@
 @section('content')
 
 
+
 <div class="d-flex flex-column bd-highlight mb-3">
     <div class="p-2 bd-highlight">
 
         <div class="d-grid gap-2">
+
+
             <section class="carousel mt-0 py-0 position-static">  
-              <p class="d-grid gap-2">
-        
-                  <button class="btn btn-primary notification-indicator notification-indicator-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+              <p class="d-grid gap-2">                     
+                  <button 
+                  class="btn btn-primary notification-indicator notification-indicator-danger" 
+                  type="button" 
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" 
+                  aria-expanded="false" 
+                  aria-controls="collapseExample">
                     AVISOS
                 </button>
         
@@ -23,8 +32,8 @@
                         <div class="carousel-inner rounded-1 light">
                         <div class="carousel-inner">
 
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/3.jpg" alt="First slide" />
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/2.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
                                         <h6 class="text-white">
@@ -43,7 +52,7 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item" data-bs-interval="10000">
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/3.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
@@ -60,8 +69,8 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item" data-bs-interval="10000">
-                                <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/3.jpg" alt="First slide" />
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/4.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
                                         <h6 class="text-white">
@@ -78,12 +87,12 @@
                             </div>
 
 
-                            <div class="carousel-item" data-bs-interval="10000">
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <img class="carousel-image d-block w-100 h-100 justify-content-center" style="object-fit: cover; object-position: 10px; max-height: 400px" src="../../assets/img/generic/3.jpg" alt="First slide" />
 
                                 <div class="badge carousel-caption text-wrap p-0 m-0" style="font-size: 2vw; margin: auto;">
                                         <h6 class="text-white">
-                                            Estimado ANDRES JAVIER CAMACHO:
+                                            Estimado ANDRES JAVIER CAMACHO LEDEZMA:
                                         </h6>
                                         <p class="text-white">Si estás interesado en participar en el proceso de asignación de EXENCIÓN DE PAGO POR EXCELENCIA MAYO - AGOSTO 2022, 
                                             ya puedes consultar la convocatoria en la siguiente liga:</p>
@@ -115,143 +124,238 @@
               </div>
             </section>
 
-    </div>
+        </div>
 </div>
 
+<ul class="nav nav-tabs mb-3 nav-fill" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
 
+        <span class="fas fa-info-circle text-primary fa-1x"></span>        
+          Información Importante
+          
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
 
+        <span class="fas fa-book text-primary fa-1x"></span>
+          Servicios Bibliotecarios
+          
+        </button>
+    </li>
+    
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-<div class="d-flex flex-column bd-highlight mb-3">
-    <div class="p-2 bd-highlight">
-        <div class="row">
-            <div class="col-sm  mt-3">
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Ver Calendario</button>
-                            </a>
+        <div class="d-flex flex-column bd-highlight mb-3">
+
+            <div class="p-2 bd-highlight mx-3">
+                <div class="row">
+                    <div class="col-sm  mt-3">
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/1.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/Calendario_SD2021.pdf?r=224">Ver Calendario</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-sm  mt-3">
+        
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/2.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/N_CatalogoCostos2022.pdf?r=108">Catálogo de Cuotas</a>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                    <div class="col-sm  mt-3">
+                    
+                    
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/3.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Manual Alumnos SII</a>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>    
+                    <div class="col-sm  mt-3">
+                        
+                    
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/4.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Movilidad Académica</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div> 
                 </div>
             </div>
-            <div class="col-sm  mt-3">
-
-
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Catálogo de Cuotas</button>
-                            </a>
+            <div class="p-2 bd-highlight mx-3">
+                <div class="row">
+                    <div class="col-sm  mt-3">
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/5.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Currículum</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-            </div>
-            <div class="col-sm  mt-3">
-            
-            
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Manual Alumnos SII</button>
-                            </a>
+                    <div class="col-sm  mt-3">
+        
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/6.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Estancias y Estadías</a>
+                                </div>
+                            </div>
                         </div>
+        
+        
                     </div>
-                </div>
-
-
-            </div>    
-            <div class="col-sm  mt-3">
-                
-            
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Movilidad Académica</button>
-                            </a>
+                    <div class="col-sm  mt-3">
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/7.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/seguro_facultativo.pdf?r=445">Trámite de Seguro Facultativo</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            
-            
-            </div> 
-          </div>
-        </div>
-    <div class="p-2 bd-highlight">        
-        <div class="row">
-            <div class="col-sm  mt-3">
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Currículum</button>
-                            </a>
+                    
+                    
+                    </div>    
+                    <div class="col-sm  mt-3">
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/8.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Movilidad Académica</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        
+                    
+                    </div> 
+                  </div>
                 </div>
             </div>
-            <div class="col-sm  mt-3">
 
-
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Estancias y Estadías</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col-sm  mt-3">
-            
-            
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Trámite de Seguro Facultativo</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>    
-            <div class="col-sm  mt-3">
-                
-            
-                <div class="card h-100">
-                    <img src="../../assets/img/generic/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="mx-2 my-2 h-100">
-                            <a href="">
-                                <button class="btn btn-outline-info w-100 h-100">Movilidad Académica</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            
-            
-            </div> 
-          </div>
-        </div>
     </div>
-</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+        <div class="p-2 bd-highlight mx-3">
+                <div class="row">
+                    <div class="col-sm  mt-3">
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/5.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href="https://sistemaintegral.upq.edu.mx/uploads/documentos/N_ReglamentoBiblioteca.pdf">
+                                        Lineamientos Biblioteca UPQ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm  mt-3">
+        
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/6.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">
+                                        Biblioteca Digital ECEST
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                    <div class="col-sm  mt-3">
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/7.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">
+                                        Base de Datos <code>EBSCO Host</code> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>    
+                    <div class="col-sm  mt-3">
+        
+                        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+                            <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/8.jpg" alt="Card image">
+                            </div>
+                            <div class="card-img-overlay d-flex align-items-center">
+                                <div class="text-center" style="width: 100%">
+                                    <a class="btn btn-falcon-primary me-1 mb-1" href=". . .">Catálogo en línea</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                    </div> 
+                  </div>
+                </div>
+        </div>
+
+
+    </div>
+   
+
+
+
+                
+
+
+
+
+    
+
+    
+
 
 
 
