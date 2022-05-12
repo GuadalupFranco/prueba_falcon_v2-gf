@@ -3,6 +3,14 @@
 
 @section('content')
 
+<nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Menú</a></li>
+        <li class="breadcrumb-item"><a href="#">Servicios escolares</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Generar Horarios</li>
+    </ol>
+</nav>
+
 <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#error-modal">Generar Horario</button>
 
 
