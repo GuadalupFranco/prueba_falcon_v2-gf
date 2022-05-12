@@ -10,8 +10,8 @@ $navs = [
         "name" => "Menu"
     ],
     [
-        "link" => "PanelPrincipal.index",
-        "name" => "Servicios escolares"
+        "link" => "PanelPrincipalAlumnoProspecto.index",
+        "name" => "AlumnoProspecto"
     ]
     ]
 @endphp
@@ -26,7 +26,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('ControlFichas.index') }}">Control de Fichas</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('InicioAlumno.index') }}">InicioAlumno</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('Prospectos.index') }}">Prospectos</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('PanelProspecto.index') }}">PanelProspecto</a>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('Agenda.index') }}">Agenda</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('AccesoProspecto.index') }}">AccesoProspecto</a>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="#">Proyecciones</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('FormatoSolicitud1.index') }}">Formato Solicitud 1</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="#">Control de grupos</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="#">Formato Solicitud 2</a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('GruposInduccion.index') }}">Grupos de inducción</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="">Subir Documentos</a>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('ValidarDocumentos.index') }}">Validar Documentos</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="">Encuesta Generica</a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@ $navs = [
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
-                    <a class="btn btn-falcon-primary me-1 mb-1" href="{{ route('GenerarHorarios.index') }}">Generar Horarios</a>
+                    <a class="btn btn-falcon-primary me-1 mb-1" href="">Modal Portal Pago</a>
                 </div>
             </div>
         </div>

@@ -45,7 +45,11 @@ Route::resource('Preregistro', PreregistroController::class)->middleware('auth')
         Route::resource('FormatoSolicitud1', FormatoSolicitud1Controller::class)->middleware('auth');
         Route::resource('PanelProspecto', PanelProspectoController::class)->middleware('auth');
         Route::resource('AccesoProspecto', AccesoProspectoController::class);
-    /*Fin Rutas Servicios Escolares*/
+
+        Route::get('/PanelPrincipalAlumnoProspecto', function () { 
+            return view('Modulos.AlumnoProspecto.PanelPrincipalAlumnoProspecto');
+        });
+    /*Fin Rutas AlumnoProspecto*/
 
     /*Rutas Servicios Escolares*/
         Route::resource('ValidarDocumentos', ValidarDocumentosController::class)->middleware('auth');
