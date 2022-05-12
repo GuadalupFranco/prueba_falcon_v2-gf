@@ -2,6 +2,25 @@
 
 @section('content')
 
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menú"
+    ],
+    [
+        "link" => "PanelDireccionCarrera.index",
+        "name" => "Dirección de Carrera"
+    ],
+    [
+        "link" => "AsignaProfesoresBA.index",
+        "name" => "Asigna Profesores - Bachillerato Avanzado",
+    ]
+]
+@endphp
+
+<x-breadcrumb-head :navs="$navs" />
+
 <!-- Seccion de formulario -->
 <div class="card mb-3">
     <div class="card-header">

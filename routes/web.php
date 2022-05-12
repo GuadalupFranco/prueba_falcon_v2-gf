@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiciosEscolares\{ControlFichas\ControlFichasController, Prospectos\Prospectos, Agenda\AgendaController, PanelPrincipal\PanelPrincipalController, GruposInduccion\GruposInduccionController};
 use App\Http\Controllers\Vinculacion\{PanelPrincipal\PanelVinculacionController, AgendaPromocional\AgendaPromocionalController, VisitaGuiada\VisitaGuiadaController, Preregistro\PreregistroController};
 use App\Http\Controllers\Administrador\{RolesPermisos, Usuarios};
+use App\Http\Controllers\DireccionCarrera\{PanelDireccionCarrera\PanelController, ConsultaGruposCI\ConsultaGruposCIController, AsignaProfesoresCI\AsignaProfesoresCIController, ConsultaGruposBA\ConsultaGruposBAController, AsignaProfesoresBA\AsignaProfesoresBAController};
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('panel-principal');
@@ -85,7 +86,11 @@ Route::get('/capturaCalificacionesBA', function () {
 // Rutas Branch guadalupe-franco
 
 /* RUTAS DE DIRECCIÓN DE CARRERA */
+<<<<<<< HEAD
 /* Route::resource('DCPanelPrincipal', PanelController::class)->middleware('auth');
+=======
+Route::resource('PanelDireccionCarrera', PanelController::class)->middleware('auth');
+>>>>>>> origin/guadalupe-franco
 Route::resource('ConsultaGruposCI', ConsultaGruposCIController::class)->middleware('auth');
 Route::resource('ConsultaGruposBA', ConsultaGruposBAController::class)->middleware('auth');
 Route::resource('AsignaProfesoresCI', AsignaProfesoresCIController::class)->middleware('auth');

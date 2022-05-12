@@ -2,6 +2,26 @@
 
 @section('content')
 
+@php
+$navs = [
+    [
+        "link" => "/",
+        "name" => "Menú"
+    ],
+    [
+        "link" => "PanelDireccionCarrera.index",
+        "name" => "Dirección de Carrera"
+    ],
+    [
+        "link" => "ConsultaGruposBA.index",
+        "name" => "Consulta Grupos - Bachillerato Avanzado",
+    ]
+]
+@endphp
+
+<x-breadcrumb-head :navs="$navs" />
+
+
 <div class="card mb-3" 
     data-list="{&quot;valueNames&quot;:[&quot;grupo&quot;,&quot;aula&quot;,
                 &quot;estudiantes&quot;,&quot;desarrollo-h&quot;,&quot;fisica-estadistica&quot;,
@@ -10,7 +30,7 @@
     <div class="card-header">
         <div class="row flex-between-center">
             <div class="col-4 col-sm-auto d-flex align-items-center pe-0">
-                <h5 class="fs-0 mb-0 text-nowrap py-2 py-xl-0">Consulta Grupos &#62; Curso Inducción</h5>
+                <h5 class="fs-0 mb-0 text-nowrap py-2 py-xl-0">Consulta Grupos &#62; Bachilletato Avanzado</h5>
             </div>
             <div class="col-8 col-sm-auto ms-auto text-end ps-0">
                 <div id="orders-actions">
@@ -31,16 +51,16 @@
             <table class="table table-sm table-striped fs--1 mb-0 overflow-hidden">
                 <thead class="bg-200 text-1000">
                     <tr>
-                        <th class="sort white-space-nowrap pe-4" data-sort="grupo">Grupo</th>
-                        <th class="sort white-space-nowrap pe-5" data-sort="aula">Aula</th>
-                        <th class="sort white-space-nowrap pe-4" data-sort="estudiantes">Estudiantes</th>
+                        <th class="sort white-space-nowrap pe-3" data-sort="grupo">Grupo</th>
+                        <th class="sort white-space-nowrap pe-4" data-sort="aula">Aula</th>
+                        <th class="sort white-space-nowrap pe-3" data-sort="estudiantes">Estudiantes</th>
                         <th class="sort white-space-nowrap pe-5" data-sort="desarrollo-h">Desarrollo Humano</th>
                         <th class="sort white-space-nowrap pe-6" data-sort="fisica-estadistica">Física/Estadística</th>
-                        <th class="sort white-space-nowrap pe-7" data-sort="ingles">Inglés</th>
-                        <th class="sort white-space-nowrap pe-6" data-sort="matematicas">Matemáticas</th>
+                        <th class="sort white-space-nowrap pe-8" data-sort="ingles">Inglés</th>
+                        <th class="sort white-space-nowrap pe-5" data-sort="matematicas">Matemáticas</th>
                         <th class="sort white-space-nowrap pe-7" data-sort="proyecto">Proyecto</th>
-                        <th class="sort white-space-nowrap pe-6" data-sort="estatus">Estatus</th>
-                        <th class="sort ps-3 align-middle pe-3">...</th>
+                        <th class="sort white-space-nowrap pe-4" data-sort="estatus">Estatus</th>
+                        <th class="sort px-4 white-space-nowrap">...</th>
                     </tr>
                 </thead>
                 <tbody class="list">
@@ -58,7 +78,7 @@
                                 <span class="ms-1 fas fa-check"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -76,7 +96,7 @@
                                 <span class="ms-1 fas fa-stream"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -94,7 +114,7 @@
                                 <span class="ms-1 fas fa-stream"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -112,7 +132,7 @@
                                 <span class="ms-1 fas fa-ban"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
@@ -130,7 +150,7 @@
                                 <span class="ms-1 fas fa-ban"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr=>
@@ -148,7 +168,7 @@
                                 <span class="ms-1 fas fa-exclamation"></span>
                             </span>
                         </td>
-                        <td class="px-3 py-2 align-middle">
+                        <td class="px-4 py-2 align-middle">
                             <span class="fas fa-edit fs--1"></span>
                         </td>
                     </tr>
