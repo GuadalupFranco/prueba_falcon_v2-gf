@@ -17,7 +17,7 @@ $navs = [
 <div class="row">
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/3.jpg" alt="Card image" />
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/1.jpg" alt="Card image" />
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
@@ -29,7 +29,7 @@ $navs = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/3.jpg" alt="Card image" />
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/2.jpg" alt="Card image" />
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
@@ -53,7 +53,7 @@ $navs = [
     </div>
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
-            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/3.jpg" alt="Card image" />
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/4.jpg" alt="Card image" />
             </div>
             <div class="card-img-overlay d-flex align-items-center">
                 <div class="text-center" style="width: 100%">
@@ -63,7 +63,19 @@ $navs = [
             </div>
         </div>
     </div>
-    {{-- Cambios de Gerson --}}
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card bg-dark text-white overflow-hidden light" style="max-width: 30rem;">
+            <div class="card-img-top"><img class="img-fluid" src="../../assets/img/generic/5.jpg" alt="Card image" />
+            </div>
+            <div class="card-img-overlay d-flex align-items-center">
+                <div class="text-center" style="width: 100%">
+                    <h5 class="card-title text-white">Superusuario</h5>
+                    <a class="btn btn-primary" href="{{ route('panel-principal-superusuario') }}">Panel principal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Cambios de Gerson 
     <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card overflow-hidden" style="width: 20rem;">
             <div class="card-img-top"><img class="img-fluid" src="/assets/img/generic/1.jpg"
@@ -77,6 +89,6 @@ $navs = [
             </div>
         </div>
     </div>
-    {{-- Fin de los cambios de Gerson --}}
+    Fin de los cambios de Gerson --}}
 </div>
 @endsection
