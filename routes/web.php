@@ -6,13 +6,14 @@ use App\Http\Controllers\Vinculacion\{PanelPrincipal\PanelVinculacionController,
 use App\Http\Controllers\AlumnoProspecto\{InicioAlumno\InicioAlumnoController, FormatoSolicitud1\FormatoSolicitud1Controller, PanelProspecto\PanelProspectoController, AccesoProspecto\AccesoProspectoController};
 use App\Http\Controllers\Administrador\{RolesPermisos, Usuarios};
 use App\Http\Controllers\DireccionCarrera\{PanelDireccionCarrera\PanelController, ConsultaGruposCI\ConsultaGruposCIController, AsignaProfesoresCI\AsignaProfesoresCIController, ConsultaGruposBA\ConsultaGruposBAController, AsignaProfesoresBA\AsignaProfesoresBAController};
+use App\Http\Controllers\AlumnoProspecto\{Encuestas\EncuestasController, CargaDocumentos\CargaDocumentosController, ContinuarRegistro\ContinuarRegistroController};
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return view('panel-principal');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+    return view('panel-principal');
 })->name('dashboard');
 
 /* Rutas de Administrador */
@@ -86,8 +87,6 @@ Route::resource('ConsultaGruposBA', ConsultaGruposBAController::class)->middlewa
 Route::resource('AsignaProfesoresCI', AsignaProfesoresCIController::class)->middleware('auth');
 Route::resource('AsignaProfesoresBA', AsignaProfesoresBAController::class)->middleware('auth');
 
-// ! Recordar descomentar esto
-
 // Fin rutas guadalupe-franco
 
 // Rutas Branch gerson-perez
@@ -117,3 +116,9 @@ Route::get('/prueba', function () {
     return view('Modulos.OE.ConsultaProgramacionCI');
 });
 // Fin rutas antonio-pechir
+
+
+Route::resource('ContinuarRegistro', ContinuarRegistroController::class)->middleware('auth');
+Route::resource('CargaDocumentos', CargaDocumentosController::class)->middleware('auth');
+Route::resource('Encuestas', EncuestasController::class)->middleware('auth');
+

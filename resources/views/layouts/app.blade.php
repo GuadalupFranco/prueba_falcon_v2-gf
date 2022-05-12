@@ -3,7 +3,7 @@
 
 <head>
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>    {{-- Para arreglar problemas dentro de la configuracion, eliminar esta linea --}}
+    {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}    {{-- Para arreglar problemas dentro de la configuracion, eliminar esta linea --}}
 
     {{-- PD: No se si sea necesaria xd --}}
 

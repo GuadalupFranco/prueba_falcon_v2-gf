@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
 
         @include('assets.components.falcon-styles')
         @laravelPWA
