@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories\modulos\super-usuario\administracion-periodos;
+namespace Database\Factories\modulos\superUsuario\PeriodoFactory;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

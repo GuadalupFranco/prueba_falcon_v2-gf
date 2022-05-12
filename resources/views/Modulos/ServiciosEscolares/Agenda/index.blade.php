@@ -48,21 +48,28 @@ $navs = [
                 <div class="col-md-auto d-md-none">
                     <hr />
                 </div>
-                <div class="col-auto d-flex order-md-0"><button class="btn btn-primary btn-sm" type="button"
-                        data-bs-toggle="modal" data-bs-target="#addEventModal"> <span
-                            class="fas fa-plus me-2"></span>Agregar</button></div>
+                <div class="col-auto d-flex order-md-0">
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#addEventModal"> 
+                        <span class="fas fa-plus me-2"></span>
+                        Agregar
+                    </button>
+                </div>
                 <div class="col d-flex justify-content-end order-md-2">
-                    <div class="dropdown font-sans-serif me-md-2"><button
-                            class="btn btn-falcon-default text-600 btn-sm dropdown-toggle dropdown-caret-none"
-                            type="button" id="email-filter" data-bs-toggle="dropdown" data-boundary="viewport"
-                            aria-haspopup="true" aria-expanded="false"><span data-view-title="data-view-title">Vista
-                                Mes</span><span class="fas fa-sort ms-2 fs--1"></span></button>
+                    <div class="dropdown font-sans-serif me-md-2">
+                        <button class="btn btn-falcon-default text-600 btn-sm dropdown-toggle dropdown-caret-none"type="button" id="email-filter" data-bs-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+                            <span data-view-title="data-view-title">Vista Mes</span>
+                            <span class="fas fa-sort ms-2 fs--1"></span>
+                        </button>
                         <div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="email-filter">
-                            <a class="active dropdown-item d-flex justify-content-between" href="#!"
-                                data-fc-view="dayGridMonth">Vista Mes<span class="icon-check"><span class="fas fa-check"
-                                        data-fa-transform="down-4 shrink-4"></span></span></a><a
-                                class="dropdown-item d-flex justify-content-between" href="#!"
-                                data-fc-view="timeGridWeek">Vista Semana<span class="icon-check"><span
+                            <a class="active dropdown-item d-flex justify-content-between" href="#!" data-fc-view="dayGridMonth">
+                                Vista Mes
+                                <span class="icon-check">
+                                    <span class="fas fa-check" data-fa-transform="down-4 shrink-4"></span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item d-flex justify-content-between" href="#!" data-fc-view="timeGridWeek">
+                                Vista Semana
+                                <span class="icon-check"><span
                                         class="fas fa-check" data-fa-transform="down-4 shrink-4"></span></span></a><a
                                 class="dropdown-item d-flex justify-content-between" href="#!"
                                 data-fc-view="timeGridDay">Vista Día<span class="icon-check"><span class="fas fa-check"
@@ -145,11 +152,7 @@ $navs = [
 
 <<<<<<< HEAD
 =======
-    
 
-    
-<script src="/path/to/cdn/jquery.min.js"></script>
-<script src="mdtimepicker.js"></script>
 >>>>>>> origin/javier-camacho
 <script>
     var isFluid = JSON.parse(localStorage.getItem('isFluid'));

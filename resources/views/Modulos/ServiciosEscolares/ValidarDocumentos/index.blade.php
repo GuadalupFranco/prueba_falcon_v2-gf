@@ -1,5 +1,6 @@
 @extends('welcome')
 
+
 @section('content')
 
 <nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb" class="mb-3">
@@ -86,7 +87,7 @@
                               </div>
                           </div>
                           <div class="p-2">
-                            <small>CURP_120035285.pdf</small>
+                            <small class="fw-bolder">CURP_120035285.pdf</small>
                           </div>
                         </div>
             
@@ -122,7 +123,7 @@
                             </div>
                           </div>
                           <div class="p-2">
-                            <small>ActaDeNacimiento_120035275.pdf</small>
+                            <small class="fw-bolder">ActaDeNacimiento_120035275.pdf</small>
                           </div>
                         </div>
                                                 
@@ -157,7 +158,7 @@
                             </div>
                           </div>
                           <div class="p-2">
-                            <small>INE_120035275.pdf</small>
+                            <small class="fw-bolder">INE_120035275.pdf</small>
                           </div>
                         </div>
           
@@ -242,7 +243,7 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="p-2 bd-highlight flex-fill">
+                                        <div class="p-2 bd-highlight flex-fill">                                                      
                                           <div class="form-floating">
                                             <textarea class="form-control h-100 d-inline-block" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                                             <label for="floatingTextarea">Comentarios</label>
