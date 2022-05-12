@@ -43,9 +43,7 @@ class UsuariosController extends Controller{
             'password' => bcrypt($request->password),
         ]);
 
-        
-
-        //$user->roles()->sync($request->roles);
+        $user->roles()->sync($request->roles);
 
         return redirect()->route('administrador-usuarios.index')->with('status', 'Usuario almacenado con éxito');
     }
@@ -55,29 +53,36 @@ class UsuariosController extends Controller{
     }
 
     public function edit($pId){
-        /*$user = User::find($pId);
+        $user = User::find($pId);
         $roles = Role::orderBy('name')->get();
-        return view('usuario.editUsuario', compact('user', 'roles'));*/
+        return view('Modulos.Administrador.Usuarios.UsuariosGenerales.edit', compact('user', 'roles'));
     }
 
     public function update(Request $request, $pId){
 
-        /*$user = User::find($pId);
-        $user->roles()->sync($request->roles);
-        //$user->update($request->all());
+        $user = User::find($pId);
 
-        return redirect()->route('usuario.edit', $pId)->with('status', 'Actualizado con éxito');*/
+        //dd($user->password);
+
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users']
+        ]);
+
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $user->password
+        ]);
+
+        return redirect()->route('administrador-usuarios.index')->with('status', 'Actualizado con éxito');
     }
 
-    public function destroy(Request $request, $pIdUsuario){
-
-        dd($request->idUser);
+    public function destroy($pIdUsuario){
 
         $user = User::find($pIdUsuario);
 
-        dd($user);
-
-        //$user->delete();
+        $user->delete();
 
         return redirect()->route('administrador-usuarios.index')->with('status', 'Usuario eliminado con éxito');
     }

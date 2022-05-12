@@ -38,9 +38,9 @@
     }
 
 
-    function modificarRol() {
+    function modificarUsuario(idUser) {
 
-        let form = document.getElementById("form-modificarRol");
+        let form = document.getElementById("form-editarUsuario"+idUser);
         let tiempoEspera = 2000 // Está en milisegundos
         let timerInterval = 0
 
@@ -75,9 +75,9 @@
         }, tiempoEspera)
     }
 
-    function eliminarUsuario() {
+    function eliminarUsuario(idUser) {
 
-        let form = document.getElementById("form-eliminarUsuario");
+        let form = document.getElementById("form-eliminarUsuario"+idUser);
         let tiempoEspera = 2000 // Está en milisegundos
 
         const swalWithBootstrapButtons = Swal.mixin({

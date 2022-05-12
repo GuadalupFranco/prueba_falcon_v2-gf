@@ -34,14 +34,14 @@
                                     <td class="id">{{ $user->id }}</td>
                                     <td class="name">{{ $user->name }}</td>
                                     <td class="name">
-                                        <a href="{{ route('administrador-roles.edit', $user->id) }}" class="btn btn-falcon-danger btn-sm float-center">
+                                        <a href="{{ route('administrador-usuarios.edit', $user->id) }}" class="btn btn-falcon-danger btn-sm float-center">
                                             <span class="far fa-edit text-warning"></span>
                                         </a>
-                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarUsuario()">
+                                        <a class="btn btn-falcon-danger btn-sm float-center" onclick="eliminarUsuario({{$user->id}})">
                                             <span class="far fa-trash-alt text-danger"></span>
                                         </a>
-                                        <form action="{{ route('administrador-usuarios.destroy', $user->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarUsuario">
-                                            <input type="text" name="idUser" value="{{ $user->id }}">
+                                        <form action="{{ route('administrador-usuarios.destroy', $user->id) }}" class="btn btn-falcon-danger btn-sm float-center m-auto d-none" method="POST" id="form-eliminarUsuario{{$user->id}}">
+                                            <input type="hidden" id="idUser{{$user->id}}" name="idUser" value="{{ $user->id }}">
                                             @csrf
                                             @method('DELETE')
                                         </form>
